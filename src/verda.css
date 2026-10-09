@@ -1,0 +1,295 @@
+/* БЭКС ERP · тема VerdaAgro. Подключается после redesign.css и переопределяет только внешний вид: разметка, классы и поведение не меняются. */
+:root{
+  --bg:#fff;--ink:#2b3318;--muted:#5e6550;--line:#e6e8dc;--line-strong:#d4d8c4;--surface:#fff;
+  --accent:#4f5a2f;--olive-500:#6b7842;--olive-50:#f4f6ec;--sage-200:#d9dec3;--gold:#e6c14a;--gold-soft:#fbf3d2;
+  --success:#3a8227;--warn:#e6c14a;--danger:#b3362b;
+  --blue-soft:rgba(79,90,47,.1);--green-soft:#e4f1d7;--amber-soft:#fbf3d2;--red-soft:rgba(179,54,43,.1);
+  --glass:rgba(255,255,255,.62);--shadow-sm:0 2px 8px rgba(43,51,24,.08);--shadow-lg:0 24px 56px rgba(43,51,24,.12)
+}
+body{background:#fff;color:var(--ink);font:15px/1.5 Onest,Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+:focus-visible{outline:3px solid rgba(79,90,47,.4);outline-offset:3px}
+
+/* Кнопки и поля: пилюли и мягкие радиусы */
+button{border-radius:999px;border-color:var(--line-strong);min-height:44px;padding:0 22px;font-weight:500;transition:background .15s,border-color .15s}
+button:hover{background:rgba(79,90,47,.06);border-color:var(--accent)}
+.primary{background:var(--gold);border-color:var(--gold);color:var(--ink);font-weight:500}
+.primary:hover{background:var(--gold);border-color:var(--gold);filter:brightness(.96)}
+input,select,textarea{border-color:var(--line-strong);border-radius:16px;min-height:48px;padding:0 18px}
+textarea{padding:14px 18px;border-radius:20px}
+input[type=checkbox]{border-radius:6px;accent-color:var(--accent)}
+.small{min-height:40px;font-size:14px;padding:0 20px}
+.subtle{background:transparent;border-color:transparent;color:var(--accent);text-decoration:underline;text-underline-offset:4px;font-size:15px}
+.subtle:hover{background:transparent;border-color:transparent}
+.icon-button{padding:0;width:48px;min-height:48px;display:inline-flex;align-items:center;justify-content:center}
+.link{border-radius:0;min-height:24px;padding:0}
+.link:hover{background:transparent;border-color:transparent;color:var(--accent)}
+.move-btn{border-radius:999px;width:36px;height:36px;min-height:36px;justify-content:center;background:rgba(79,90,47,.08);color:var(--accent)}
+.move-btn:hover{background:rgba(79,90,47,.16)}
+
+/* Типографика: легкие крупные заголовки */
+h1{font-size:56px;line-height:60px;letter-spacing:-.04em;font-weight:300;margin:12px 0 14px}
+h2{font-size:24px;line-height:32px;letter-spacing:-.01em;font-weight:400;margin-bottom:16px}
+h3{font-size:16px;line-height:24px;font-weight:500}
+.muted,.section-caption{font-size:14px;line-height:20px;color:var(--muted)}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--olive-500);font-weight:500}
+.card-top .eyebrow,.route-name .eyebrow{font-size:13px;letter-spacing:0;text-transform:none}
+.card-top .eyebrow{color:var(--muted);font-weight:400}
+.route-name .eyebrow{font-weight:500}
+
+/* Оболочка: меню */
+.layout{grid-template-columns:280px minmax(0,1fr)}
+.sidebar{padding:0 20px 24px;border-right:1px solid var(--line);background:#fff;display:flex;flex-direction:column}
+.brand{height:auto;padding:28px 8px 20px;margin-bottom:8px;gap:14px}
+.brand-symbol{width:44px;height:44px;border-radius:14px;background:var(--accent);font-size:20px}
+.brand b{font-size:18px;letter-spacing:-.01em;font-weight:500}
+.brand small{font-size:12px;color:var(--muted);line-height:16px}
+.nav-group{margin-bottom:4px}
+.nav-group summary{height:40px;padding:0 16px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;color:var(--olive-500);align-items:center}
+.nav-group summary:hover{color:var(--accent)}
+.nav-group summary:after{font-size:16px;color:var(--olive-500)}
+.nav{gap:2px;padding-bottom:8px}
+.nav button{display:flex;align-items:center;justify-content:space-between;min-height:44px;padding:0 16px;border-radius:999px;font-size:15px;color:var(--ink);font-weight:400}
+.nav button:hover{background:rgba(79,90,47,.06);border:0}
+.nav button.active{background:rgba(79,90,47,.1);color:var(--ink);font-weight:500}
+.nav button.active:after{content:'';width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.sidefoot{margin:auto 0 0;padding:16px 18px;border:0;border-radius:20px;background:var(--olive-50);font-size:12px;line-height:18px;color:var(--ink);font-weight:500}
+.sidefoot span{font-weight:400;color:var(--muted);margin-top:2px}
+
+/* Оболочка: верхняя панель и рабочая область */
+.top{height:72px;padding:0 40px;font-size:14px;gap:16px;border-bottom:1px solid var(--line)}
+.top b{font-weight:500}
+.mark{font-size:13px;line-height:20px;padding:6px 14px;border-radius:999px;background:var(--gold-soft);color:#5a4500;font-weight:500}
+.workspace{padding:48px 40px 32px}
+.page-heading{align-items:flex-end;margin-bottom:32px}
+.page-heading p{font-size:18px;line-height:28px;color:var(--muted)}
+.actions{gap:12px}
+.page-heading .primary,.actions .primary{min-height:52px;padding:0 28px;font-size:16px}
+.workspace-tools{gap:12px;margin-bottom:32px}
+.searchbox{background:#fff;border-color:var(--line-strong);border-radius:999px;min-height:52px;padding:0 20px;min-width:300px}
+.searchbox input{border:0;min-height:0;padding:0;border-radius:0;width:260px;font-size:15px}
+.date-tools{gap:8px}
+.date-tools input{width:170px;border-radius:999px;min-height:52px;font-weight:500}
+.date-tools select{width:130px;border-radius:999px;min-height:52px}
+.date-tools .icon-button{width:52px;min-height:52px}
+.footer{font-size:13px;color:var(--muted);text-align:center;border-top:0;margin-top:56px}
+
+/* Переключатели и фильтры */
+.viewbar{gap:16px;margin-bottom:24px}
+.segmented{background:rgba(79,90,47,.08);padding:4px;border-radius:999px;gap:4px}
+.segmented button{min-height:40px;padding:0 22px;font-size:14px;color:var(--muted);background:transparent;border:0}
+.segmented button:hover{background:transparent;color:var(--ink)}
+.segmented .selected{background:#fff;color:var(--ink);box-shadow:var(--shadow-sm);font-weight:500}
+.filterchips{gap:8px}
+.filterchips button{border:1px solid var(--line-strong);background:#fff;min-height:44px;padding:0 20px;font-size:14px;color:var(--ink)}
+.filterchips button:hover{border-color:var(--accent);background:rgba(79,90,47,.05)}
+.filterchips .selected{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:500}
+.drag-help{font-size:14px;margin-bottom:24px}
+
+/* Показатели */
+.kpi-row{border:0;background:transparent;gap:16px;margin-bottom:40px}
+.kpi{border:1px solid var(--line);border-radius:28px;padding:24px 28px;background:#fff}
+.kpi:first-child{background:var(--olive-50);border-color:var(--olive-50)}
+.kpi:last-child{border:1px solid var(--line)}
+.kpi>span{font-size:14px;line-height:20px}
+.kpi strong{font-size:48px;line-height:52px;letter-spacing:-.04em;font-weight:300;margin:6px 0}
+.kpi small{font-size:14px;color:var(--muted)}
+.metrics{border-radius:28px;background:var(--olive-50);padding:24px 28px;gap:24px}
+.metrics small{font-size:14px}
+.metrics strong{font-size:36px;line-height:40px;font-weight:300;letter-spacing:-.03em}
+
+/* Заголовки секций */
+.section-title h2,.section-title h3{font-size:24px;line-height:32px;font-weight:400;letter-spacing:-.01em}
+.section-title.secondary{border-top:1px solid var(--line);padding-top:28px;margin-top:40px}
+.count{background:rgba(79,90,47,.1);border:0;color:var(--accent);border-radius:999px;font-size:14px;font-weight:500;min-width:32px;height:32px;display:inline-flex;align-items:center;justify-content:center;padding:0 10px}
+
+/* Карточки */
+.cargo-card,.order-tile,.job-tile{border-radius:20px;padding:20px;margin-bottom:14px;border-color:var(--line);background:#fff}
+.cargo-card:hover,.order-tile:hover,.job-tile:hover{border-color:var(--olive-500);box-shadow:var(--shadow-sm)}
+.card-top{margin-bottom:10px}
+.cargo-card>.link,.order-tile>.link,.job-tile>.link{font-size:18px;line-height:24px;font-weight:500;letter-spacing:-.01em;color:var(--ink)}
+.cargo-card>p,.order-tile>p{font-size:14px;line-height:20px;margin:4px 0 16px}
+.card-bottom{gap:8px}
+.card-bottom b{font-size:22px;line-height:28px;font-weight:400;letter-spacing:-.02em}
+.cargo-card .card-bottom b{font-size:28px;line-height:32px;font-weight:300;letter-spacing:-.03em}
+.card-meta{font-size:13px;line-height:18px;margin-top:14px}
+.card-alert{font-size:13px;line-height:18px;padding-top:12px;margin-top:12px;border-top-color:#eef0e4}
+.card-alert:before{color:var(--gold)}
+.badge{border-radius:999px;padding:5px 12px;font-size:13px;line-height:18px;font-weight:500;background:rgba(79,90,47,.08);color:var(--accent)}
+.badge.good{background:var(--green-soft);color:#2d6a1b}
+.badge.warn{background:var(--gold-soft);color:#5a4500}
+.badge.bad{background:var(--red-soft);color:#7a1f17}
+.badge.blue{background:#dcebf3;color:#10384d}
+.finished{opacity:.7}
+
+/* Логистика */
+.logistics-layout{grid-template-columns:340px minmax(0,1fr);gap:40px}
+.dispatch-pool{padding-right:36px;border-right:1px solid var(--line)}
+.route-card{border-radius:28px;margin-bottom:20px;border-color:var(--line)}
+.route-head{padding:20px 28px;gap:24px;background:rgba(79,90,47,.05);border-bottom:0}
+.route-time{font-variant-numeric:normal;font-size:36px;line-height:40px;font-weight:300;letter-spacing:-.03em;padding-right:24px;border-right-color:var(--line-strong)}
+.route-time small{font-size:13px;line-height:18px;color:var(--muted)}
+.route-name>.link{font-size:18px;line-height:24px;font-weight:500;color:var(--ink)}
+.route-name p{font-size:14px;line-height:20px;margin:2px 0 0}
+.route-head>button{min-height:44px;font-size:14px;padding:0 22px;border-color:var(--accent);color:var(--accent);background:transparent}
+.route-head>button:hover{background:rgba(79,90,47,.08)}
+.route-body{grid-template-columns:minmax(0,1fr) 260px}
+.route-cargo{padding:24px 28px;gap:16px}
+.route-cargo .cargo-card{width:300px;background:#fff;margin:0}
+.capacity{border-left:1px solid var(--line);padding:24px 28px;gap:10px;font-size:13px}
+.capacity strong{font-size:36px;line-height:40px;font-weight:300;letter-spacing:-.03em}
+.capacity strong small{font-size:14px}
+.capacity>small{font-size:13px;line-height:18px;margin-top:0}
+progress{height:8px;border-radius:999px;background:rgba(79,90,47,.1)}
+progress::-webkit-progress-bar{background:rgba(79,90,47,.1);border-radius:999px}
+progress::-webkit-progress-value{background:var(--olive-500);border-radius:999px}
+progress::-moz-progress-bar{background:var(--olive-500);border-radius:999px}
+.pickup-card{border-radius:20px;background:rgba(79,90,47,.06);border:0;padding:14px 20px}
+.pickup-card span{font-size:14px}
+.external-cargo{border-radius:20px;background:var(--olive-50);font-size:14px;padding:18px 20px}
+.external-cargo svg{color:var(--accent)}
+.external-cargo p{font-size:13px}
+.drop-placeholder{border:1.5px dashed #bcc3a0;border-radius:20px;background:rgba(79,90,47,.03);font-size:15px;min-height:110px;flex-direction:column;gap:4px;text-align:center}
+.drop-placeholder small{font-size:13px}
+.empty-state,.lane-empty{border:1.5px dashed #cdd3b6;border-radius:20px;font-size:14px}
+
+/* Канбан */
+.kanban{grid-template-columns:repeat(7,308px);gap:16px}
+.kanban-lane{border-radius:28px;background:#f7f8f1;padding:20px 16px 16px}
+.kanban-lane>header{padding:0 6px;margin-bottom:6px;min-height:32px;gap:10px}
+.kanban-lane h3{font-size:16px;font-weight:500}
+.stage-dot{width:8px;height:8px;background:var(--line-strong)}
+.s2,.s3{background:var(--olive-500)}.s4{background:var(--gold)}.s5,.s6{background:var(--success)}
+.lane-total{font-size:13px;padding:0 6px 14px;border-bottom-color:var(--line)}
+.order-products{font-size:13px}
+
+/* График смен */
+.unscheduled{border:1.5px dashed #bcc3a0;border-radius:24px;background:rgba(79,90,47,.03)}
+.schedule-scroll{border-radius:28px;border-color:var(--line)}
+.schedule-corner,.day-heading{font-size:13px;background:rgba(79,90,47,.05)}
+.day-heading b{font-size:16px;font-weight:500}
+.day-heading.today{background:rgba(230,193,74,.22)}
+.line-heading{background:var(--olive-50);font-size:13px}
+.job-tile{background:var(--olive-50);border-color:transparent;border-radius:16px;padding:14px}
+.job-tile>.link{font-size:14px}
+.job-tile p{font-size:12px}
+.job-tile .card-bottom b{font-size:20px}
+.cell-add{font-size:12px}
+
+/* Таблицы */
+.scroll{border-radius:28px;border-color:var(--line);margin:20px 0 28px}
+table{font-size:15px}
+th{background:rgba(79,90,47,.05);font-size:13px;font-weight:500;color:var(--muted)}
+th,td{padding:18px 24px}
+td{border-bottom-color:#eef0e4}
+tbody tr:hover{background:rgba(79,90,47,.03)}
+.cell-sub{font-size:13px;line-height:18px;margin-top:2px}
+.compact th,.compact td{padding:10px 20px}
+td button:not(.link){font-size:14px;min-height:40px}
+.sort-head{min-height:20px;border:0;padding:0;background:transparent;color:inherit;font-size:13px;gap:8px}
+.sort-head:hover{background:transparent;border:0;color:var(--ink)}
+.inline-progress progress{width:100px}
+.revenue-bar{font-size:15px;padding:20px 0;border-bottom-color:var(--line)}
+
+/* Панели, карточка заказа, диалоги */
+.panel,.intro{border-radius:28px;border-color:var(--line);padding:32px}
+.intro h2{font-size:32px;line-height:38px;font-weight:300;letter-spacing:-.03em}
+.panel p,.intro p,.panel li{font-size:15px;line-height:24px}
+.notice{border-radius:20px;background:var(--gold-soft);color:#5a4500;font-size:14px;padding:16px 20px}
+.error{border-radius:20px;background:var(--red-soft);border-color:rgba(179,54,43,.25);color:#7a1f17;font-size:14px;padding:16px 20px}
+dialog{border-radius:32px;border-color:var(--line);box-shadow:var(--shadow-lg);overflow:auto}
+dialog::backdrop{background:rgba(43,51,24,.38);backdrop-filter:blur(4px)}
+.dialoghead{padding:28px 32px 20px;border-bottom:0}
+.dialoghead h2{font-size:32px;line-height:38px;font-weight:300;letter-spacing:-.03em}
+.close{font-size:24px;min-width:44px;min-height:44px;padding:0;color:var(--muted);border:0}
+.close:hover{background:rgba(79,90,47,.08);border:0}
+.dialogbody{padding:8px 32px 32px}
+.dialogfoot{padding:20px 32px;border-top:1px solid var(--line);gap:12px}
+.dialogfoot button{font-size:15px}
+.formgrid{gap:20px 28px}
+.field{font-size:13px;gap:8px;color:var(--muted);font-weight:500}
+.field input,.field select{font-size:16px;font-weight:400}
+.form-section{font-size:16px;font-weight:500;color:var(--ink);padding-bottom:12px;margin-top:12px}
+.tabs{gap:32px;border-bottom-color:var(--line)}
+.tabs button{border-radius:0;min-height:0;padding:14px 0;font-size:15px;color:var(--muted);border:0;background:transparent}
+.tabs button:hover{background:transparent;color:var(--ink)}
+.tabs .primary{background:transparent;border:0;border-bottom:2px solid var(--accent);color:var(--ink);font-weight:500;filter:none}
+.statuspath{gap:6px}
+.statuspath span{font-size:13px;padding:7px 14px;border-radius:999px;background:rgba(79,90,47,.06)}
+.statuspath .on{background:var(--accent);color:#fff;font-weight:500}
+.secondary-actions{border-radius:20px;border-color:var(--line);font-size:14px;padding:16px 20px}
+.next-action{border-radius:24px;background:var(--olive-50);padding:24px 28px}
+.next-action span{font-size:13px}
+.next-action b{font-size:16px}
+.next-action button{font-size:15px}
+.logs{font-size:14px}
+
+/* Уведомление */
+.toast{background:var(--ink);border-radius:999px;padding:14px 24px;font-size:14px;box-shadow:var(--shadow-lg)}
+.toast button{min-height:0;font-size:14px;color:#fff;border:0}
+.toast button:hover{background:transparent;color:var(--gold)}
+
+/* Перетаскивание */
+.is-dragging .drop-allowed{outline:2px dashed rgba(79,90,47,.45);outline-offset:-2px}
+.drag-over.drop-allowed{background:rgba(79,90,47,.1)!important;outline:2px solid var(--accent)!important}
+
+/* Адаптив: планшет */
+@media(max-width:1200px){
+  .layout{grid-template-columns:240px minmax(0,1fr)}
+  .workspace{padding:32px 24px}
+  .top{padding:0 24px}
+  .logistics-layout{grid-template-columns:280px minmax(0,1fr);gap:24px}
+  .dispatch-pool{padding-right:20px}
+  .route-body{grid-template-columns:1fr}
+  .capacity{border-left:0;border-top:1px solid var(--line);flex-direction:row;align-items:center;gap:16px;padding:16px 24px;flex-wrap:wrap}
+  .capacity progress{width:120px}
+  .capacity strong{font-size:24px;line-height:28px}
+  .route-cargo .cargo-card{width:100%}
+  .route-head{gap:12px;flex-wrap:wrap}
+  h1{font-size:44px;line-height:48px}
+}
+
+/* Адаптив: телефон */
+@media(max-width:760px){
+  .layout{display:block}
+  .sidebar{display:block;padding:0;border-right:0;border-bottom:1px solid var(--line)}
+  .brand{padding:12px 16px;margin:0}
+  .brand-symbol{width:36px;height:36px;font-size:18px}
+  .nav-group,.sidefoot{display:none}
+  .nav.mobile{display:flex;overflow:auto;gap:6px;padding:4px 16px 12px}
+  .nav.mobile button{white-space:nowrap;font-size:14px;min-height:40px;padding:0 16px;border:1px solid var(--line-strong);justify-content:center}
+  .nav.mobile button.active{background:var(--accent);border-color:var(--accent);color:#fff}
+  .nav.mobile button.active:after{display:none}
+  .top{height:56px;padding:0 16px}
+  .workspace{padding:28px 16px 24px}
+  .page-heading{align-items:flex-start;margin-bottom:24px;gap:16px}
+  h1,.page-heading h1{font-size:36px;line-height:40px}
+  .page-heading p{font-size:15px;line-height:22px}
+  .page-heading .primary,.actions .primary{min-height:48px;padding:0 20px;font-size:15px}
+  .searchbox{flex:1;min-width:180px}
+  .searchbox input{width:100%}
+  .date-tools input{width:150px}
+  .kpi-row{margin-bottom:28px;gap:10px}
+  .kpi{padding:16px;border-radius:22px}
+  .kpi strong{font-size:30px;line-height:34px}
+  .kpi>span,.kpi small{font-size:12px}
+  .logistics-layout{display:block}
+  .dispatch-pool{border-right:0;padding:0;margin-bottom:28px}
+  .route-head{padding:16px 20px;gap:12px}
+  .route-name{flex:1 1 150px}
+  .route-head>button{width:100%}
+  .route-time{font-size:28px;line-height:32px;padding-right:16px}
+  .route-cargo{padding:16px 20px}
+  .capacity{padding:16px 20px}
+  .dialoghead{padding:20px 20px 12px}
+  .dialoghead h2{font-size:24px;line-height:30px}
+  .dialogbody{padding:8px 20px 24px}
+  .dialogfoot{padding:16px 20px}
+  .next-action{padding:20px}
+  .tabs{gap:20px}
+  .panel,.intro{padding:20px;border-radius:24px}
+  th,td{padding:14px 16px}
+  .kanban-lane{border-radius:24px}
+}
+
+/* Application identity */
+.brand-symbol{flex-shrink:0;background:transparent}.brand-symbol svg{width:100%;height:100%;display:block}.brand-partner{white-space:nowrap;font-size:12px;font-weight:400}.brand>div{min-width:0}.brand{gap:10px}

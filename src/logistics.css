@@ -1,0 +1,93 @@
+/* Логистика. Тема VerdaAgro. Цвета типов груза: зеленый — доставка клиенту БЭКС, синий — везем свое, красный — коммерческая перевозка. */
+:root{--c-del:#3a8227;--c-del-bg:#eaf4df;--c-own:#2f7fa8;--c-own-bg:#e1eef5;--c-com:#b8504a;--c-com-bg:#f8e6e3}
+.kdot{display:inline-block;width:12px;height:12px;border-radius:50%;flex-shrink:0;vertical-align:-1px}
+.kdot.del{background:var(--c-del)}.kdot.own{background:var(--c-own)}.kdot.com{background:var(--c-com)}
+
+/* Задания */
+.filterrow{display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap;margin:0 0 20px}
+.filterrow .field{margin:0;min-width:240px}
+.filterrow select{min-height:48px;border-radius:999px;padding:0 20px}
+.complcell{display:flex;flex-direction:column;gap:6px;min-width:150px;align-items:flex-start}
+.complcell .cover{width:100%}
+.complcell small{font-size:12px;color:var(--muted)}
+
+/* Доска рейсов */
+.page-trips #periodFilter{display:none}
+.tripbar{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:20px}
+.kindlegend{display:flex;gap:8px;flex-wrap:wrap}
+button.kindchip{display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:0 16px;font-size:14px;border-radius:999px;border:1px solid transparent}
+.kindchip.del{background:var(--c-del-bg);color:#245b17}.kindchip.own{background:var(--c-own-bg);color:#1c5a7a}.kindchip.com{background:var(--c-com-bg);color:#8a2f2a}
+.kindchip:hover{border-color:currentColor;background:inherit}
+.kindchip.selected{border-color:currentColor;box-shadow:var(--shadow-sm)}
+.logistics-layout{grid-template-columns:320px minmax(0,1fr);gap:32px}
+button.catalog-link{margin-top:12px;width:100%;border-color:var(--accent);color:var(--accent);background:transparent}
+.lanes{min-width:0;display:flex;flex-direction:column;gap:16px}
+.lane{position:relative;border-radius:28px;border:1px solid var(--line);background:#fff}
+.lane.kind-del{--kc:var(--c-del);--kb:var(--c-del-bg)}.lane.kind-own{--kc:var(--c-own);--kb:var(--c-own-bg)}.lane.kind-com{--kc:var(--c-com);--kb:var(--c-com-bg)}
+.lane:before{content:'';position:absolute;left:0;top:18px;bottom:18px;width:6px;border-radius:0 6px 6px 0;background:var(--kc)}
+.lane-head{position:relative;display:flex;align-items:center;gap:20px;padding:18px 24px 18px 30px;border-radius:28px 28px 0 0;background:linear-gradient(90deg,var(--kb),transparent 70%);outline-offset:-3px}
+.lane-id{display:flex;flex-direction:column;min-width:96px}
+.lane-id b{font-size:18px;font-weight:500;letter-spacing:-.01em}
+.lane-id span{font-size:13px;color:var(--muted)}
+.lane-title{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+.lane-title .link{font-size:17px;font-weight:500;color:var(--ink);text-align:left}
+.lane-title small{font-size:13px;color:var(--muted)}
+.lane-kinds{display:flex;gap:4px}
+.lane-head>button{min-height:40px;font-size:14px;border-color:var(--accent);color:var(--accent);background:transparent}
+.lane-body{display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:20px;padding:6px 24px 22px 30px}
+.lane-cards{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-start;min-width:0}
+.lane .cargo-card{width:260px;margin:0;border-left:5px solid var(--c-del);background:var(--c-del-bg);border-color:rgba(58,130,39,.25);border-left-color:var(--c-del)}
+.lane .cargo-card:hover{border-color:var(--c-del)}
+.extra-card{width:260px;display:flex;align-items:center;gap:12px;padding:16px 18px;border-radius:20px;border:1px solid transparent}
+.extra-card b{display:block;font-size:15px;font-weight:500}
+.extra-card small{font-size:13px;color:var(--muted)}
+.extra-card.own{background:var(--c-own-bg);border-left:5px solid var(--c-own)}
+.extra-card.com{background:var(--c-com-bg);border-left:5px solid var(--c-com)}
+.lane .drop-placeholder{width:100%;min-height:96px}
+.lane-cap{display:flex;flex-direction:column;gap:10px;align-self:stretch;justify-content:center}
+.cap-pill{display:flex;flex-direction:column;align-items:flex-start;padding:14px 20px;border-radius:28px;background:var(--olive-50)}
+.cap-pill span{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--olive-500);font-weight:500}
+.cap-pill strong{font-size:32px;line-height:36px;font-weight:300;letter-spacing:-.03em}
+.cap-pill small{font-size:13px;color:var(--muted)}
+.cap-pill.full{background:var(--gold-soft)}
+.cap-note{font-size:12px;line-height:16px;padding:0 6px}
+.cap-note.ok{color:#2d6a1b}.cap-note.warn{color:#7a5a00}
+.lane.finished{opacity:.75}
+
+/* Всплывающая карточка рейса */
+.trip-pop{display:none;position:absolute;left:30px;top:calc(100% - 4px);z-index:40;width:min(460px,calc(100% - 60px));padding:20px 22px;border-radius:24px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow-lg);animation:pop .16s cubic-bezier(.2,.8,.2,1);transform-origin:top left;pointer-events:none}
+.lane-head:hover .trip-pop,.lane-head:focus-within .trip-pop{display:block}
+.pop-title{display:flex;flex-direction:column;margin-bottom:10px}
+.pop-title b{font-size:18px;font-weight:500}
+.pop-title span{font-size:14px;color:var(--muted)}
+.trip-pop dl{margin:0;display:grid;grid-template-columns:1fr 1fr;gap:8px 18px}
+.trip-pop dl div{display:flex;flex-direction:column;gap:0}
+.trip-pop dt{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--olive-500);font-weight:500}
+.trip-pop dd{margin:0;font-size:14px;line-height:20px}
+.pop-flags{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:12px;padding-top:12px;border-top:1px solid var(--line);font-size:13px}
+.pop-flags span{display:flex;align-items:center;gap:6px}
+
+/* Окно рейса */
+.tripsum{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:20px}
+.tripsum>div{padding:16px 20px;border-radius:24px;background:var(--olive-50);display:flex;flex-direction:column;gap:6px}
+.tripsum>div.warn{background:var(--gold-soft)}
+.tripsum span{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--olive-500);font-weight:500}
+.tripsum b{font-size:16px;font-weight:500;line-height:22px}
+.tsec{padding:22px 24px;border-radius:24px;border:1px solid var(--line);margin-bottom:14px}
+.tsec h3{margin:0 0 14px;font-size:18px;font-weight:500}
+.tsec h4{margin:18px 0 4px;font-size:15px;font-weight:500}
+.exrow{display:grid;grid-template-columns:200px minmax(0,1fr) 140px 44px;gap:12px;align-items:end;margin-top:6px}
+.exrow[hidden]{display:none}
+.exrow .rrm{margin-bottom:12px}
+button.addextra{margin-top:10px;border-style:dashed;border-color:#bcc3a0;color:var(--accent);background:transparent}
+.tagrow{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+button.tagchip{min-height:36px;padding:0 16px;font-size:13px;background:#fff}
+button.tagchip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.tasklist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.tasklist .task{padding:14px 18px;border-radius:20px;background:var(--olive-50)}
+.tasklist .task p{margin:2px 0;font-size:13px;color:var(--muted)}
+
+@media(max-width:1200px){.logistics-layout{grid-template-columns:1fr}.lane-body{grid-template-columns:1fr}.lane-cap{flex-direction:row;align-items:center;flex-wrap:wrap}.tripsum{grid-template-columns:1fr}}
+@media(max-width:760px){.lane-head{flex-wrap:wrap;padding:16px 18px 16px 24px;gap:10px}.lane-title{flex-basis:100%;order:3}.lane-body{padding:6px 16px 18px 24px}.lane .cargo-card,.extra-card{width:100%}.exrow{grid-template-columns:1fr 1fr}.exrow .rrm{grid-column:2}.tasklist{grid-template-columns:1fr}.trip-pop{left:12px;width:calc(100% - 24px)}.filterrow .field{min-width:100%}}
+
+@media(max-width:760px){.tripbar .segmented{width:100%}.tripbar .segmented button{flex:1;padding:0 6px;font-size:13px;white-space:nowrap}}

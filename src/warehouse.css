@@ -1,0 +1,77 @@
+/* Склад и рецептуры. Тема VerdaAgro. */
+.actions.bar{margin:0 0 20px;gap:12px}
+.actions.bar .primary{min-height:48px;padding:0 24px}
+.selectall{margin-left:auto;display:flex;align-items:center;gap:8px;font-size:14px;color:var(--muted);cursor:pointer}
+.rawpick{display:flex;align-items:center;gap:12px;cursor:pointer;font-size:16px}
+.rawpick input{flex-shrink:0}
+button.link.mini{display:inline-flex;align-items:center;gap:6px;margin:4px 0 0 30px;font-size:13px;color:var(--muted)}
+button.link.mini svg{width:14px;height:14px}
+button.link.mini:hover{color:var(--accent)}
+tr.warnrow td{background:rgba(251,243,210,.5)}
+tr.sel td{background:rgba(79,90,47,.07)}
+tr.sel td:first-child{box-shadow:inset 3px 0 0 var(--accent)}
+.pick{font-size:15px;font-weight:500;color:var(--ink)}
+.reservecell{display:flex;flex-direction:column;gap:6px;min-width:140px}
+.reservecell span{font-size:14px}
+.delta{font-weight:500;font-variant-numeric:tabular-nums}
+.delta.minus{color:#b3362b}
+.delta.plus{color:#2d6a1b}
+.legend{border:1px solid var(--line);border-radius:20px;padding:14px 20px;margin:0 0 16px;font-size:14px}
+.legend summary{cursor:pointer;color:var(--accent);font-weight:500}
+.legend ul{margin:12px 0 0;padding-left:20px;display:grid;gap:6px;color:var(--muted)}
+.legend b{color:var(--ink);font-weight:500}
+
+/* Готовая продукция */
+.split{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:28px;align-items:start}
+.side-panel{position:sticky;top:20px;display:flex;flex-direction:column;gap:12px;padding:24px;border-radius:28px;background:var(--olive-50)}
+.side-panel h3{margin:0;font-size:22px;line-height:28px;font-weight:400;letter-spacing:-.01em}
+.side-title{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--olive-500);font-weight:500;margin-top:8px}
+.side-chips{display:flex;gap:8px;flex-wrap:wrap}
+.datechip{display:inline-flex;align-items:baseline;gap:6px;padding:6px 14px;border-radius:999px;background:#fff;font-size:13px;color:var(--muted)}
+.datechip b{font-size:16px;font-weight:500;color:var(--ink)}
+button.side-order{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;min-height:0;padding:12px 16px;border-radius:20px;border:0;background:#fff;text-align:left;transition:transform .15s,box-shadow .15s}
+button.side-order:hover{transform:translateY(-1px);box-shadow:var(--shadow-sm);background:#fff}
+.side-order span{display:flex;flex-direction:column;gap:2px}
+.side-order b{font-size:15px;font-weight:500}
+.side-order small{font-size:13px;color:var(--muted)}
+button.side-history{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:6px;border-color:var(--accent);color:var(--accent);background:transparent}
+button.side-history svg{width:18px;height:18px}
+
+/* Расчет потребности */
+.notice.flow{border-radius:20px;margin:0 0 24px}
+.notice.flow b{font-weight:500}
+table.needs td,table.needs th{padding:16px 20px}
+table.needs td.feedcell,table.needs td.needcell{vertical-align:top;background:#fbfcf7}
+table.needs tr.grp td{border-top:1px solid var(--line)}
+table.needs tbody tr:first-child td{border-top:0}
+table.needs tbody tr:hover{background:transparent}
+table.needs td.feedcell b{font-size:16px;font-weight:500}
+table.needs td.needcell{font-size:20px;font-weight:300;letter-spacing:-.02em}
+.stockpill{display:inline-block;padding:6px 14px;border-radius:12px;font-size:14px;font-weight:500;font-variant-numeric:tabular-nums}
+.stockpill.good{background:var(--green-soft);color:#2d6a1b}
+.stockpill.bad{background:var(--red-soft);color:#7a1f17}
+.empty-block{text-align:center;padding:48px 24px;border:1.5px dashed #cdd3b6;border-radius:28px;background:rgba(79,90,47,.03);display:flex;flex-direction:column;align-items:center;gap:8px}
+.empty-block h3{margin:0;font-size:22px;font-weight:400}
+.empty-block p{max-width:480px;color:var(--muted);margin:0 0 8px}
+
+/* Закупки */
+.sheet{margin-top:8px;padding:28px;border-radius:28px;background:var(--olive-50)}
+.sheet-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:8px}
+.sheet-head h3{margin:4px 0 0;font-size:24px;line-height:30px;font-weight:300;letter-spacing:-.02em}
+.sheet .scroll{background:#fff;margin:12px 0 16px}
+.sheet-total{display:flex;justify-content:flex-end;align-items:baseline;gap:16px;padding:0 8px;font-size:14px;color:var(--muted)}
+.sheet-total b{font-size:28px;line-height:32px;font-weight:300;letter-spacing:-.03em;color:var(--ink)}
+
+/* Рецептуры */
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:20px}
+.facts div{padding:14px 18px;border-radius:20px;background:var(--olive-50)}
+.facts span{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--olive-500);font-weight:500;margin-bottom:2px}
+.facts b{font-size:16px;font-weight:500}
+.recipe-total{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:16px 20px;border-radius:20px;background:var(--olive-50);margin-bottom:8px;font-size:15px}
+.recipe-total b{font-size:20px;font-weight:400}
+.recipe-sum{font-size:14px;margin:4px 0 0}
+.recipe-sum.ok{color:#2d6a1b}
+.recipe-sum.bad{color:#7a1f17}
+
+@media(max-width:1200px){.split{grid-template-columns:1fr}.side-panel{position:static}.facts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.facts{grid-template-columns:1fr}.selectall{margin-left:0}.sheet{padding:18px;border-radius:24px}.actions.bar .primary{width:100%}}

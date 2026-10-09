@@ -1,0 +1,32 @@
+/* The card occupies its own column; the list remains available. */
+:root{--entity-panel-width:480px}
+body.entity-card-open .layout>main{margin-right:var(--entity-panel-width);min-width:0}
+#modal.entity-panel{position:fixed;inset:0 0 0 auto;margin:0;width:var(--entity-panel-width);max-width:100vw;height:100dvh;max-height:100dvh;padding:0;border:0;border-left:1px solid var(--line);border-radius:0;background:white;box-shadow:-8px 0 30px #27301618;z-index:110;transform:none;overflow:hidden}
+#modal.entity-panel[open]{display:block;animation:entity-slide 180ms ease-out}
+#modal.entity-panel #modalContent{display:flex;flex-direction:column;height:100%;max-height:100%;min-height:0}
+#modal.entity-panel .dialoghead{flex-shrink:0;padding:18px 20px;border-bottom:1px solid var(--line);position:static;background:white}
+#modal.entity-panel .dialoghead h2{font-size:21px;line-height:1.35;margin:0;overflow-wrap:anywhere}
+#modal.entity-panel .dialogbody{flex:1;min-height:0;overflow:auto;padding:20px;overscroll-behavior:contain}
+#modal.entity-panel .dialogfoot{flex-shrink:0;display:flex;flex-wrap:wrap;gap:8px;padding:14px 20px;border-top:1px solid var(--line);background:white;position:static}
+#modal.entity-panel .formgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
+#modal.entity-panel .tabs{flex-wrap:wrap}#modal.entity-panel .dialogbody>*,#modal.entity-panel .formgrid>*{min-width:0;max-width:100%}
+#modal.entity-panel .dialogbody table{min-width:540px}#modal.entity-panel .scroll{overflow:auto}
+#modal.entity-panel .danger{color:#a83b32;border-color:#e6c3be;margin-left:auto}
+.entity-row{cursor:pointer}.entity-row:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}.entity-note{margin-top:24px;border-top:1px solid var(--line);padding-top:12px}
+#modal.entity-panel .express-layout{display:block}#modal.entity-panel .express-side{margin-top:16px}#modal.entity-panel .express-main{min-width:0}
+#modal.entity-panel .deal-grid{display:flex;flex-direction:column;gap:20px}#modal.entity-panel .deal-main{display:block!important;min-width:0}#modal.entity-panel.entity-editing .deal-summary{display:none}.deal-head-actions{flex-shrink:0}
+@container(max-width:800px){.plan-strip{padding:14px;gap:12px;margin-bottom:16px}.plan-total{padding:10px 14px;min-width:130px}.plan-total b{font-size:25px;line-height:30px}.plan-body{gap:8px}.plan-chips{gap:6px}button.plan-chip{padding:8px 10px;min-width:70px}button.plan-chip b{font-size:20px;line-height:24px}.plan-head .segmented button{padding:8px;min-width:0}.viewbar{gap:8px}.filterchips button{padding:8px 10px}}
+body.entity-card-open .workspace{container-type:inline-size}body.entity-card-open .top #crumb{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}body.entity-card-open .top{gap:10px}body.entity-card-open .top .mark,body.entity-card-open .top>button{flex-shrink:0}
+@container(max-width:800px){.logistics-layout,.dispatch-layout,.stock-layout{display:block}.dispatch-pool{border-right:0;padding-right:0;margin-bottom:20px}.route-list{min-width:0}.route-head{flex-wrap:wrap}.route-body{display:block}.route-cargo{min-width:0}.capacity{margin-top:12px}.market-context-heading{flex-wrap:wrap}.carrier-row,.impact-layout{grid-template-columns:1fr}.offer-grid{grid-template-columns:1fr}}
+@keyframes entity-slide{from{transform:translateX(100%)}to{transform:translateX(0)}}
+@media(min-width:1500px){:root{--entity-panel-width:560px}}
+@media(max-width:1000px){body.entity-card-open .layout>main{margin-right:0}:root{--entity-panel-width:min(480px,85vw)}}
+@media(max-width:600px){:root{--entity-panel-width:92vw}#modal.entity-panel .dialogbody{padding:16px}#modal.entity-panel .dialoghead,#modal.entity-panel .dialogfoot{padding:14px 16px}}
+@media(prefers-reduced-motion:reduce){#modal.entity-panel[open]{animation:none}}
+@media print{body.entity-card-open .layout>main{margin-right:0}#modal.entity-panel{position:static;width:100%;height:auto;max-height:none;overflow:visible}#modal.entity-panel .dialogbody{overflow:visible}}
+
+body.entity-card-open .top>span:first-child{min-width:0;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}@media(max-width:760px){body.entity-card-open .top .small{padding:0 8px;min-width:0;font-size:11px}body.entity-card-open .top{gap:6px}body.entity-card-open .top .mark{padding:6px 8px;font-size:11px}}
+/* A stacked drawer must scroll summary and content together, without sticky overlap. */
+#modal.entity-panel .deal-summary{position:static;top:auto;width:100%;min-width:0;flex-shrink:0}
+#modal.entity-panel .deal-main{width:100%;flex-shrink:0}
+#modal.entity-panel .deal-grid{align-items:stretch;min-width:0}

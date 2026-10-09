@@ -1,0 +1,127 @@
+/* Производство. Тема VerdaAgro. */
+.daynav{display:flex;gap:8px;margin-bottom:24px;max-width:640px}
+.daynav button{flex:1;min-height:48px;background:#fff}
+.daynav button.on{background:var(--gold);border-color:var(--gold);font-weight:500}
+.linesettings{display:flex;align-items:center;gap:28px;flex-wrap:wrap;padding:20px 28px;border-radius:28px;background:var(--olive-50);margin-bottom:24px}
+.linesettings div:not(:last-child){display:flex;flex-direction:column;gap:2px}
+.linesettings span,.dayhours span,.daytotals span,.jobstrip span,.mtot span{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--olive-500);font-weight:500}
+.linesettings b,.dayhours b{font-size:18px;font-weight:400;letter-spacing:-.01em}
+.linesettings button,.dayhours button{margin-left:auto}
+tr.today td{background:rgba(230,193,74,.14)}
+tr.today td:first-child{box-shadow:inset 3px 0 0 var(--gold)}
+.todaytag{font-size:11px;font-weight:500;padding:2px 8px;border-radius:999px;background:var(--gold);color:var(--ink);margin-left:6px}
+.eff{display:inline-block;padding:4px 12px;border-radius:999px;font-size:13px;font-weight:500;font-style:normal;background:rgba(79,90,47,.08);color:var(--accent);font-variant-numeric:tabular-nums}
+.eff.ok{background:#e4f1d7;color:#2d6a1b}
+.eff.mid{background:var(--gold-soft);color:#5a4500}
+.eff.low{background:var(--red-soft);color:#7a1f17}
+tr.done td{background:rgba(79,90,47,.03)}
+tr.run td{background:rgba(220,235,243,.4)}
+.hl{display:inline-block;padding:3px 10px;border-radius:10px;background:var(--gold-soft);color:#5a4500;font-weight:500;white-space:nowrap}
+.hl.bad{background:var(--red-soft);color:#7a1f17}
+table button:disabled{opacity:.45}
+
+/* День */
+.dayhead{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1.7fr);gap:16px;margin-bottom:16px}
+.dayhours{display:flex;align-items:center;gap:28px;flex-wrap:wrap;padding:20px 28px;border-radius:28px;background:var(--olive-50)}
+.dayhours div:not(:last-child){display:flex;flex-direction:column;gap:2px}
+.daybtns{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:20px 24px;border-radius:28px;border:1px solid var(--line)}
+.daybtns button{min-height:44px;font-size:14px}
+.daycomment{display:flex;gap:12px;align-items:flex-end;margin-bottom:24px}
+.daycomment .field{flex:1;margin:0}
+.daytotals{display:flex;gap:16px;margin:-8px 0 20px}
+.daytotals div{flex:1;max-width:320px;padding:16px 22px;border-radius:24px;background:var(--gold-soft);display:flex;flex-direction:column;gap:2px}
+.daytotals b{font-size:28px;line-height:32px;font-weight:300;letter-spacing:-.03em}
+
+/* Неделя */
+.weekwrap{display:grid;grid-template-columns:300px minmax(0,1fr);gap:24px;align-items:start;margin-bottom:20px}
+.unsorted{padding:20px;border-radius:28px;background:var(--olive-50);display:flex;flex-direction:column;gap:16px;min-height:200px}
+.unsorted h3,.weekhead h3{margin:0;font-size:20px;line-height:26px;font-weight:400}
+.ugroup{display:flex;flex-direction:column;gap:8px}
+.uhead{display:flex;justify-content:space-between;align-items:baseline;font-size:14px;padding:0 4px}
+.uhead span{color:var(--muted);font-size:13px}
+.unsorted .job-tile{background:#fff;margin:0}
+.week{min-width:0}
+.weekhead{display:flex;align-items:center;gap:20px;margin-bottom:12px;flex-wrap:wrap}
+.weekhead button{margin-left:auto}
+.legend2{display:flex;gap:16px;font-size:13px;color:var(--muted)}
+.legend2 span{display:flex;align-items:center;gap:6px}
+.sw{width:18px;height:12px;border-radius:4px;display:inline-block}
+.sw.gp,.chip.gp{background:repeating-linear-gradient(135deg,#cfe3ee 0 5px,#dcebf3 5px 10px)}
+.sw.ex,.chip.ex{background:repeating-linear-gradient(135deg,#f3d6d2 0 5px,#f9e6e3 5px 10px)}
+.schedule-scroll{border-radius:28px}
+.wgrid{display:grid;grid-template-columns:92px repeat(10,minmax(124px,1fr));min-width:1340px}
+.wcorner,.wday,.wshift{padding:14px 12px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);font-size:13px;background:rgba(79,90,47,.05)}
+.wday{grid-column:span 2;display:flex;flex-direction:column;gap:6px;text-align:center}
+.wday b{font-size:14px;font-weight:500}
+.wday.today{background:rgba(230,193,74,.22)}
+.wsub{display:grid;grid-template-columns:1fr 1fr;font-size:11px;color:var(--muted)}
+.wshift{background:var(--olive-50);display:flex;align-items:center}
+.wcell{min-height:150px;padding:8px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:6px}
+.chip{display:flex;align-items:center;gap:2px;border-radius:12px;padding:2px 2px 2px 0;border:1px solid rgba(43,51,24,.08);cursor:grab}
+.chip.sel{border-color:var(--accent);box-shadow:0 0 0 2px rgba(79,90,47,.25)}
+.chip-main{flex:1;min-width:0;min-height:0;border:0;background:transparent;padding:6px 8px;display:flex;flex-direction:column;align-items:flex-start;gap:0;text-align:left;font-size:12px;line-height:16px;border-radius:12px}
+.chip-main:hover{background:rgba(255,255,255,.5)}
+.chip-main b{font-weight:600}
+.chip-main .l1{color:var(--ink)}
+.chip-main .l2{color:var(--muted);font-size:11px}
+.chip .move-btn{width:24px;height:24px;min-height:24px;background:transparent}
+.chip-flag{font-size:10px;padding:0 8px;color:var(--muted)}
+.jobstrip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr)) auto;gap:14px 20px;align-items:end;padding:20px 24px;border-radius:28px;background:var(--olive-50);margin-bottom:8px}
+.jobstrip div{display:flex;flex-direction:column;gap:2px;min-width:0}
+.jobstrip b{font-size:15px;font-weight:500}
+
+/* План/факт по месяцу */
+.monthbar{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:20px}
+.monthnav{display:flex;align-items:center;gap:12px;padding:6px;border-radius:999px;border:1px solid var(--line-strong)}
+.monthnav b{min-width:160px;text-align:center;font-weight:500;font-size:15px}
+.monthnav button{width:40px;height:40px;min-height:40px;padding:0;border-radius:50%}
+.mtot{padding:12px 20px;border-radius:24px;background:var(--olive-50);display:flex;flex-direction:column;gap:4px}
+.mtot div{display:flex;align-items:center;gap:10px}
+.mtot b{font-size:20px;font-weight:400}
+.pftable{min-width:900px}
+.pftable th{text-align:center;font-size:13px;padding:12px 8px}
+.pftable th.sub{font-weight:400;font-size:12px}
+.pftable th.dow{background:var(--olive-50);color:var(--ink);font-weight:500;width:56px}
+.pftable td{padding:6px;text-align:center;border-left:1px solid #eef0e4;height:52px}
+.pftable td.empty{background:repeating-linear-gradient(135deg,transparent 0 6px,rgba(79,90,47,.04) 6px 12px)}
+.pf{min-height:34px;padding:0 12px;border-radius:999px;border:0;font-size:13px;font-weight:500;font-variant-numeric:tabular-nums}
+.pf.ok{background:#e4f1d7;color:#2d6a1b}.pf.mid{background:var(--gold-soft);color:#5a4500}.pf.low{background:var(--red-soft);color:#7a1f17}
+.pfrules{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:12px}
+.pfrules>div{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:14px 20px;border-radius:24px;background:var(--olive-50);font-size:14px}
+.norm{padding:4px 12px;border-radius:999px;background:#fff;font-size:13px}
+
+/* Потребность */
+tr.need-red td{background:rgba(179,54,43,.07)}
+tr.need-amb td{background:rgba(251,243,210,.6)}
+tr.need-grey td{background:rgba(79,90,47,.04);color:var(--muted)}
+
+/* Форма наряда */
+.rrows{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 20px}
+.rrow{display:flex;align-items:flex-end;gap:8px}
+.rrow .field{flex:1}
+.rrow[hidden]{display:none}
+.rrm{width:40px;height:40px;min-height:40px;padding:0;border-radius:50%;margin-bottom:12px;color:var(--danger)}
+.radd{display:flex;gap:10px;align-items:center;margin:8px 0 6px}
+.radd select{min-width:200px}
+.planbox{padding:20px 24px;border-radius:24px;background:var(--olive-50);margin-bottom:12px}
+.planbox .field b{font-size:18px;font-weight:400}
+.planbox .field small{font-size:12px;color:var(--muted);font-weight:400}
+.stamps{font-size:14px;color:var(--muted);margin:-8px 0 12px}
+.stamps b{color:var(--ink);font-weight:500}
+table.mixgrid{margin:12px 0}
+table.mixgrid th,table.mixgrid td{border:1px solid var(--line-strong);padding:8px 10px;text-align:center;font-size:13px}
+table.mixgrid td:first-child{text-align:left}
+td.circle{color:var(--muted)}
+.signs{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-top:28px;font-size:13px}
+
+@media(max-width:1200px){.dayhead{grid-template-columns:1fr}.weekwrap{grid-template-columns:1fr}.jobstrip{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.rrows{grid-template-columns:1fr}.linesettings,.dayhours{gap:16px}.daycomment{flex-direction:column;align-items:stretch}.daytotals{flex-direction:column}}
+
+.page-day .page-heading h1{font-size:44px;line-height:48px}
+.page-day .scroll table{min-width:1500px}
+.wcell{min-height:130px}
+
+.row-tools{flex-wrap:nowrap}
+.row-tools button{min-height:38px;padding:0 14px;font-size:13px}
+td:last-child{white-space:nowrap}
+.printform{overflow:auto}

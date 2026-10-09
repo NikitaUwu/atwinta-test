@@ -1,0 +1,60 @@
+/* Brand lockup and collapsible section rail, sharing the Verda palette. */
+.sidebar .brand{display:flex;align-items:center;gap:10px;padding:22px 0;margin:0 0 8px;flex-shrink:0}
+.sidebar .brand-symbol{width:44px;height:44px;flex:0 0 44px}
+.sidebar .brand-name{height:44px;display:flex;flex-direction:column;justify-content:center;gap:2px;flex:1;min-width:0}
+.sidebar .brand-name b{font-size:18px;line-height:21px;font-weight:500;letter-spacing:.015em}
+.sidebar .brand-name>span{font-size:14px;line-height:18px;color:var(--muted)}
+.nav-toggle{width:36px;min-height:36px;height:36px;padding:7px;display:grid;place-items:center;background:transparent;border:1px solid transparent;flex-shrink:0;border-radius:10px;color:var(--accent)}
+.nav-toggle:hover{background:var(--olive-50);border-color:var(--line)}.nav-toggle svg{width:20px;height:20px}
+.sidebar .nav-group{margin-bottom:8px}.sidebar .nav-group summary{letter-spacing:.07em}.sidebar .nav-group .nav{gap:3px}
+.nav-rail{display:none}.nav-backdrop{display:none}
+.nav-collapsed .layout{grid-template-columns:76px minmax(0,1fr)}
+.nav-collapsed .sidebar{padding:0 10px 20px;overflow:visible;align-items:center}
+.nav-collapsed .sidebar .brand{flex-direction:column;gap:16px;padding:22px 0 18px;width:100%}
+.nav-collapsed .brand-name,.nav-collapsed .sidebar .nav-group,.nav-collapsed .sidefoot,.nav-collapsed .sidebar .nav.mobile{display:none!important}
+.nav-collapsed .brand-symbol{width:36px;height:36px;flex-basis:36px}
+.nav-collapsed .nav-rail{display:flex;flex-direction:column;align-items:center;width:100%;gap:10px}
+.nav-rail>button{width:48px;height:48px;min-height:48px;padding:0;display:grid;place-items:center;border:0;background:transparent;border-radius:14px;color:var(--muted);position:relative}
+.nav-rail>button svg{width:22px;height:22px}.nav-rail>button:hover,.nav-rail>button[aria-expanded=true]{background:var(--olive-50);color:var(--accent)}
+.nav-rail>button.active{background:var(--accent);color:white}.rail-marker{display:none;position:absolute;left:-10px;top:14px;width:3px;height:20px;border-radius:3px;background:var(--gold)}.active>.rail-marker{display:block}
+.nav-flyout{position:fixed;z-index:90;background:white;border:1px solid var(--line);box-shadow:var(--shadow-lg);border-radius:20px;width:258px;max-width:calc(100vw - 88px);padding:12px;max-height:calc(100dvh - 16px);overflow:auto}
+.flyout-heading{display:flex;align-items:center;justify-content:space-between;padding:4px 8px 12px;border-bottom:1px solid var(--line);margin-bottom:8px;font-size:14px}
+.flyout-close{border:0;min-height:30px;width:30px;padding:0;font-size:22px;background:transparent;color:var(--muted)}
+.nav-flyout nav{display:grid;gap:4px}.nav-flyout [data-page]{text-align:left;border:0;background:transparent;padding:10px 12px;border-radius:12px;font-size:14px;min-height:44px;white-space:normal}
+.nav-flyout [data-page]:hover{background:var(--olive-50)}.nav-flyout [data-page].active{background:var(--blue-soft);color:var(--accent);font-weight:600}
+@media(max-width:760px){
+ .layout,.nav-collapsed .layout{display:grid;grid-template-columns:64px minmax(0,1fr)}
+ .nav-collapsed .sidebar{display:flex;position:sticky;top:0;height:100dvh;max-height:100dvh;border-right:1px solid var(--line);padding:0 6px;z-index:60}
+ .nav-collapsed .sidebar .brand{padding:16px 0;gap:12px}.nav-collapsed .nav-rail>button{width:44px;height:44px;min-height:44px}.rail-marker{left:-7px}
+ body:not(.nav-collapsed) .sidebar{display:flex;position:fixed;left:0;top:0;bottom:0;width:min(280px,calc(100vw - 44px));height:100dvh;overflow:auto;z-index:70;background:white;padding:0 16px 20px;border-right:1px solid var(--line);box-shadow:var(--shadow-lg)}
+ body:not(.nav-collapsed) .layout>main{grid-column:2}
+ body:not(.nav-collapsed) .sidebar .nav-group{display:block}body:not(.nav-collapsed) .sidebar .nav.mobile{display:none}
+ body:not(.nav-collapsed) .nav-backdrop{display:block;position:fixed;inset:0;z-index:65;background:rgba(43,51,24,.25);border:0;border-radius:0;min-height:0}
+ .sidebar .brand{padding:18px 0}.sidebar .brand-symbol{width:44px;height:44px;flex-basis:44px}.sidebar .brand-name{height:44px}
+ .nav-flyout{max-width:calc(100vw - 80px)}.page-heading{flex-wrap:wrap}.workspace-tools .searchbox{min-width:0;width:100%}.workspace-tools .date-tools{max-width:100%;flex-wrap:wrap}
+}
+@media print{.nav-flyout,.nav-backdrop,.nav-rail,.nav-toggle{display:none!important}.nav-collapsed .layout{display:block}}
+
+@media(max-width:760px){.kpi-row{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.kpi-row>.kpi:last-child:nth-child(odd){grid-column:1/-1}.kpi{min-width:0}}
+
+/* Open Design: clear disclosure affordance; no font-dependent arrow glyphs. */
+.sidebar .nav-group summary{gap:10px;padding-right:8px;min-height:44px;height:auto}
+.sidebar .nav-group summary::after{content:none!important}
+.sidebar .nav-group summary::-webkit-details-marker{display:none}
+.nav-section-label{flex:1;min-width:0}
+.nav-chevron{display:grid;place-items:center;width:26px;height:26px;flex:0 0 26px;border-radius:8px;background:var(--olive-50);color:var(--accent);transition:background 160ms ease}
+.nav-chevron svg{width:18px;height:18px;transform:rotate(-90deg);transition:transform 180ms ease}
+.nav-group[open] .nav-chevron svg{transform:rotate(0deg)}
+.nav-group summary:hover .nav-chevron{background:var(--sage-200)}
+@media(prefers-reduced-motion:reduce){.nav-chevron,.nav-chevron svg{transition:none}}
+
+/* Keep navigation geometry stable across active screens and long pages. */
+html{scrollbar-gutter:stable}.sidebar{scrollbar-gutter:stable;overscroll-behavior:contain}.sidebar .nav-group,.sidebar .sidefoot{flex-shrink:0}.sidebar .nav button{position:relative;padding-right:30px;font-weight:400;line-height:1.4;transition:background-color 160ms ease,color 160ms ease}.sidebar .nav button.active{font-weight:400}.sidebar .nav button::after{content:'';position:absolute;right:16px;top:50%;transform:translateY(-50%);width:6px;height:6px;border-radius:50%;background:var(--gold);opacity:0;transition:opacity 160ms ease}.sidebar .nav button.active::after{opacity:1}.nav-rail>button{transition:background-color 160ms ease,color 160ms ease}.layout{transition:grid-template-columns 220ms ease}.nav-flyout:not([hidden]){animation:nav-appear 150ms ease-out}@keyframes nav-appear{from{opacity:0;transform:translateX(-4px)}to{opacity:1;transform:translateX(0)}}
+@supports(interpolate-size:allow-keywords){.sidebar .nav-group{interpolate-size:allow-keywords}.sidebar .nav-group::details-content{height:0;overflow:clip;transition:height 200ms ease,content-visibility 200ms allow-discrete}.sidebar .nav-group[open]::details-content{height:auto}}
+@media(max-width:760px){.layout{transition:none}}
+@media(prefers-reduced-motion:reduce){.layout,.sidebar .nav button,.sidebar .nav button::after,.nav-rail>button,.sidebar .nav-group::details-content{transition:none}.nav-flyout:not([hidden]){animation:none}}
+
+/* Brand icon retains its size in both navigation states. */
+.sidebar .brand-symbol,.nav-collapsed .sidebar .brand-symbol{width:36px;height:36px;flex:0 0 36px}.sidebar .brand-name{height:36px;gap:0}.sidebar .brand-name b{font-size:17px;line-height:20px}.sidebar .brand-name>span{font-size:13px;line-height:16px}
+
+.sidebar-stats{display:grid;gap:8px;margin:16px 0;flex-shrink:0}.sidebar-stats-date{font-size:11px;color:var(--muted);padding:0 4px}.sidebar-stat{width:100%;display:block;text-align:left;white-space:normal;border:1px solid var(--line);border-radius:16px;padding:12px 14px;background:var(--olive-50);color:var(--ink);min-height:0}.sidebar-stat:hover{border-color:var(--accent);background:var(--sage-200)}.sidebar-stat>span{display:block;font-size:12px;font-weight:500;margin-bottom:6px}.sidebar-stat>strong{display:block;font-size:24px;line-height:1.2;font-weight:500}.sidebar-stat small{display:block;font-size:11px;color:var(--muted);line-height:1.5;font-weight:400}.sidebar-stat strong small{display:inline}.sidebar-stat-pair{display:flex;justify-content:space-between;gap:8px}.sidebar-stat-pair b{display:block;font-size:22px;font-weight:500;color:var(--ink)}.sidebar-stat-progress{height:4px;background:var(--line);border-radius:4px;overflow:hidden;margin:8px 0}.sidebar-stat-progress i{display:block;height:100%;background:var(--accent)}.nav-collapsed .sidebar-stats{display:none}@media print{.sidebar-stats{display:none}}

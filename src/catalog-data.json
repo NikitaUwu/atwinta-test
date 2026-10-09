@@ -1,0 +1,2505 @@
+{
+  "version": "beks-2026-10-05-v1",
+  "raw": [
+    {
+      "id": "beks-491e900ed711",
+      "name": "Глютен кукурузный",
+      "unit": "кг",
+      "min": 500.0,
+      "purchaseBatch": 1000.0,
+      "source": "Сырье.xls",
+      "sourceRow": 10,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false
+    },
+    {
+      "id": "beks-268b7a2b7e82",
+      "name": "Горох",
+      "unit": "кг",
+      "min": 2000.0,
+      "purchaseBatch": 2000.0,
+      "source": "Сырье.xls",
+      "sourceRow": 11,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false
+    },
+    {
+      "id": "beks-dfef8e6f564c",
+      "name": "Жмых подсолнечника",
+      "unit": "кг",
+      "min": 3000.0,
+      "purchaseBatch": 5000.0,
+      "source": "Сырье.xls",
+      "sourceRow": 12,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false
+    },
+    {
+      "id": "beks-3d8077eb01a1",
+      "name": "Жом свекловичный",
+      "unit": "кг",
+      "min": 500.0,
+      "purchaseBatch": 1000.0,
+      "source": "Сырье.xls",
+      "sourceRow": 13,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false
+    },
+    {
+      "id": "beks-3cfbe299c334",
+      "name": "Заменитель цельного молока",
+      "unit": "кг",
+      "min": 50.0,
+      "purchaseBatch": 100.0,
+      "source": "Сырье.xls",
+      "sourceRow": 14,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false
+    },
+    {
+      "id": "beks-73c572e385ed",
+      "name": "Известниковая мука",
+      "unit": "кг",
+      "min": 5000.0,
+      "purchaseBatch": 5000.0,
+      "source": "Сырье.xls",
+      "sourceRow": 15,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false
+    },
+    {
+      "id": "corn",
+      "name": "Кукуруза",
+      "unit": "кг",
+      "min": 1000.0,
+      "purchaseBatch": 3000.0,
+      "source": "Сырье.xls",
+      "sourceRow": 16,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false
+    },
+    {
+      "id": "beks-fcbd99600a13",
+      "name": "Лигногран",
+      "unit": "кг",
+      "min": 300.0,
+      "purchaseBatch": 1000.0,
+      "source": "Сырье.xls",
+      "sourceRow": 17,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false
+    },
+    {
+      "id": "beks-db84ea5b310b",
+      "name": "Масло подсолнечное",
+      "unit": "кг",
+      "min": 1000.0,
+      "purchaseBatch": 3000.0,
+      "source": "Сырье.xls",
+      "sourceRow": 18,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false
+    },
+    {
+      "id": "beks-899059860bab",
+      "name": "Мел кормовой",
+      "unit": "кг",
+      "min": 500.0,
+      "purchaseBatch": 3000.0,
+      "source": "Сырье.xls",
+      "sourceRow": 19,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false
+    },
+    {
+      "id": "beks-909935f74113",
+      "name": "Монокальцийфосфат",
+      "unit": "кг",
+      "min": 100.0,
+      "purchaseBatch": 500.0,
+      "source": "Сырье.xls",
+      "sourceRow": 22,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false
+    },
+    {
+      "id": "beks-10ccc77c710b",
+      "name": "Мясокостная мука",
+      "unit": "кг",
+      "min": 3000.0,
+      "purchaseBatch": 5000.0,
+      "source": "Сырье.xls",
+      "sourceRow": 23,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false
+    },
+    {
+      "id": "beks-afc222f7ea98",
+      "name": "Овес",
+      "unit": "кг",
+      "min": 2000.0,
+      "purchaseBatch": 5000.0,
+      "source": "Сырье.xls",
+      "sourceRow": 24,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false
+    },
+    {
+      "id": "beks-a13d1434c2d0",
+      "name": "Отруби пшеничные",
+      "unit": "кг",
+      "min": 15000.0,
+      "purchaseBatch": 20000.0,
+      "source": "Сырье.xls",
+      "sourceRow": 25,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false
+    },
+    {
+      "id": "beks-a71a24bd20a9",
+      "name": "Отходы от забоя",
+      "unit": "кг",
+      "min": 3000.0,
+      "purchaseBatch": 3000.0,
+      "source": "Сырье.xls",
+      "sourceRow": 26,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false
+    },
+    {
+      "id": "beks-8e42b444e252",
+      "name": "Премикс КС - 6 (1 %)",
+      "unit": "кг",
+      "min": 100.0,
+      "purchaseBatch": 200.0,
+      "source": "Сырье.xls",
+      "sourceRow": 27,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false
+    },
+    {
+      "id": "beks-0c50b5c73d66",
+      "name": "Премикс П 5-1 Старт (1,5%)",
+      "unit": "кг",
+      "min": 500.0,
+      "purchaseBatch": 1000.0,
+      "source": "Сырье.xls",
+      "sourceRow": 28,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false
+    },
+    {
+      "id": "wheat",
+      "name": "Пшеница",
+      "unit": "кг",
+      "min": 15000.0,
+      "purchaseBatch": 20000.0,
+      "source": "Сырье.xls",
+      "sourceRow": 29,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false
+    },
+    {
+      "id": "beks-a215c57e9920",
+      "name": "Ракушка",
+      "unit": "кг",
+      "min": 500.0,
+      "purchaseBatch": 3000.0,
+      "source": "Сырье.xls",
+      "sourceRow": 30,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false
+    },
+    {
+      "id": "beks-3a8d157382ac",
+      "name": "Рыбий жир",
+      "unit": "кг",
+      "min": 50.0,
+      "purchaseBatch": 200.0,
+      "source": "Сырье.xls",
+      "sourceRow": 31,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false
+    },
+    {
+      "id": "beks-2ea9f05d21a2",
+      "name": "Рыбная мука",
+      "unit": "кг",
+      "min": 100.0,
+      "purchaseBatch": 100.0,
+      "source": "Сырье.xls",
+      "sourceRow": 32,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false
+    },
+    {
+      "id": "beks-e9e7ccc09baf",
+      "name": "Соль кормовая",
+      "unit": "кг",
+      "min": 100.0,
+      "purchaseBatch": 1000.0,
+      "source": "Сырье.xls",
+      "sourceRow": 33,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false
+    },
+    {
+      "id": "beks-f4ab4e98b15b",
+      "name": "Соя полножирная",
+      "unit": "кг",
+      "min": 3000.0,
+      "purchaseBatch": 5000.0,
+      "source": "Сырье.xls",
+      "sourceRow": 34,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false
+    },
+    {
+      "id": "beks-78f527a8f4d8",
+      "name": "Травяная мука гранулированная",
+      "unit": "кг",
+      "min": 500.0,
+      "purchaseBatch": 1000.0,
+      "source": "Сырье.xls",
+      "sourceRow": 35,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false
+    },
+    {
+      "id": "beks-f02a1025f76c",
+      "name": "Шрот соевый",
+      "unit": "кг",
+      "min": 1000.0,
+      "purchaseBatch": 3000.0,
+      "source": "Сырье.xls",
+      "sourceRow": 36,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false
+    },
+    {
+      "id": "beks-f02369bcd634",
+      "name": "Ячмень",
+      "unit": "кг",
+      "min": 10000.0,
+      "purchaseBatch": 20000.0,
+      "source": "Сырье.xls",
+      "sourceRow": 37,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false
+    },
+    {
+      "id": "beks-9ee8a45d82d0",
+      "name": "Экструдат общий",
+      "unit": "кг",
+      "min": 0,
+      "purchaseBatch": 0,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false,
+      "source": "Рецептуры DOCX"
+    },
+    {
+      "id": "beks-3f4ba6b58684",
+      "name": "Известняк",
+      "unit": "кг",
+      "min": 0,
+      "purchaseBatch": 0,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false,
+      "source": "Рецептуры DOCX"
+    },
+    {
+      "id": "beks-a556ed1c340b",
+      "name": "Экструдат",
+      "unit": "кг",
+      "min": 0,
+      "purchaseBatch": 0,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false,
+      "source": "БМВК БЭКС.docx"
+    },
+    {
+      "id": "beks-6b346ca944d5",
+      "name": "Премикс общий",
+      "unit": "кг",
+      "min": 0,
+      "purchaseBatch": 0,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false,
+      "source": "БМВК БЭКС.docx"
+    },
+    {
+      "id": "beks-85eb56c2400f",
+      "name": "Травянная мука",
+      "unit": "кг",
+      "min": 0,
+      "purchaseBatch": 0,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false,
+      "source": "КК ПЗК.docx"
+    },
+    {
+      "id": "beks-36e4e56dc9bf",
+      "name": "Жмых",
+      "unit": "кг",
+      "min": 0,
+      "purchaseBatch": 0,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false,
+      "source": "КК ПЗК.docx"
+    },
+    {
+      "id": "beks-c8d27199af30",
+      "name": "Премикс",
+      "unit": "кг",
+      "min": 0,
+      "purchaseBatch": 0,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false,
+      "source": "КК ПЗК.docx"
+    },
+    {
+      "id": "beks-0b0c767ae209",
+      "name": "Овёс / отруби",
+      "unit": "кг",
+      "min": 0,
+      "purchaseBatch": 0,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false,
+      "source": "КК.docx"
+    },
+    {
+      "id": "beks-a7c7bc8e9af2",
+      "name": "Премикс 32",
+      "unit": "кг",
+      "min": 0,
+      "purchaseBatch": 0,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false,
+      "source": "КК.docx"
+    },
+    {
+      "id": "beks-8b3c965ad09c",
+      "name": "Масло",
+      "unit": "кг",
+      "min": 0,
+      "purchaseBatch": 0,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false,
+      "source": "КС-26 Старт.docx"
+    },
+    {
+      "id": "beks-92b698ceaeab",
+      "name": "Монокальций",
+      "unit": "кг",
+      "min": 0,
+      "purchaseBatch": 0,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false,
+      "source": "МРС.docx"
+    },
+    {
+      "id": "beks-902292734d92",
+      "name": "Известь",
+      "unit": "кг",
+      "min": 0,
+      "purchaseBatch": 0,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false,
+      "source": "откорм КРС.docx"
+    },
+    {
+      "id": "beks-2a30a692564a",
+      "name": "Премикс крс",
+      "unit": "кг",
+      "min": 0,
+      "purchaseBatch": 0,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false,
+      "source": "откорм КРС.docx"
+    },
+    {
+      "id": "beks-619ab1640ead",
+      "name": "Глютен",
+      "unit": "кг",
+      "min": 0,
+      "purchaseBatch": 0,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false,
+      "source": "ПК-2 Бройлер ПРОФИ рост.docx"
+    },
+    {
+      "id": "beks-e60559537496",
+      "name": "Премикс свинной",
+      "unit": "кг",
+      "min": 0,
+      "purchaseBatch": 0,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false,
+      "source": "ПРЕДСТАРТ ПОРОСЯТА.docx"
+    },
+    {
+      "id": "beks-4ef16cf171db",
+      "name": "Премикс 32 свин",
+      "unit": "кг",
+      "min": 0,
+      "purchaseBatch": 0,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false,
+      "source": "СКО.docx"
+    },
+    {
+      "id": "beks-5b03581bb6a2",
+      "name": "Экструдат пшеничный",
+      "unit": "кг",
+      "min": 0,
+      "purchaseBatch": 0,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false,
+      "source": "Собака.docx"
+    },
+    {
+      "id": "beks-c76bf2bae463",
+      "name": "Премикс «собачий»",
+      "unit": "кг",
+      "min": 0,
+      "purchaseBatch": 0,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false,
+      "source": "Собака.docx"
+    }
+  ],
+  "products": [
+    {
+      "id": "beks-1e7cf072cc0f",
+      "name": "БМВК БЭКС",
+      "recipe": {
+        "beks-a556ed1c340b": 425.0,
+        "beks-f02a1025f76c": 50.0,
+        "beks-6b346ca944d5": 25.0
+      },
+      "source": "БМВК БЭКС.docx",
+      "sourceIngredients": [
+        {
+          "name": "ЭКСТРУДАТ",
+          "raw": "beks-a556ed1c340b",
+          "qty": 425.0
+        },
+        {
+          "name": "ШРОТ СОЕВЫЙ",
+          "raw": "beks-f02a1025f76c",
+          "qty": 50.0
+        },
+        {
+          "name": "ПРЕМИКС ОБЩИЙ",
+          "raw": "beks-6b346ca944d5",
+          "qty": 25.0
+        }
+      ],
+      "sourceTotal": 500.0,
+      "sourceIssues": [
+        "Уточнить компонент: ЭКСТРУДАТ"
+      ],
+      "granule": "—",
+      "pack": "—",
+      "price": 0,
+      "priceKnown": false,
+      "stock": 0,
+      "stockKnown": false,
+      "repack": "—",
+      "tag": ""
+    },
+    {
+      "id": "beks-804bf12a31fd",
+      "name": "Ганулированный овес",
+      "recipe": {
+        "beks-afc222f7ea98": 425.0,
+        "beks-dfef8e6f564c": 50.0,
+        "beks-3f4ba6b58684": 15.0,
+        "beks-e9e7ccc09baf": 10.0
+      },
+      "source": "Ганулированный овес - копия.docx",
+      "sourceIngredients": [
+        {
+          "name": "ОВЕС",
+          "raw": "beks-afc222f7ea98",
+          "qty": 425.0
+        },
+        {
+          "name": "ЖМЫХ ПОДСОЛН.",
+          "raw": "beks-dfef8e6f564c",
+          "qty": 50.0
+        },
+        {
+          "name": "ИЗВЕСТНЯК",
+          "raw": "beks-3f4ba6b58684",
+          "qty": 15.0
+        },
+        {
+          "name": "СОЛЬ",
+          "raw": "beks-e9e7ccc09baf",
+          "qty": 10.0
+        }
+      ],
+      "sourceTotal": 500.0,
+      "sourceIssues": [],
+      "granule": "4 мм",
+      "pack": "—",
+      "price": 0,
+      "priceKnown": false,
+      "stock": 0,
+      "stockKnown": false,
+      "repack": "—",
+      "tag": ""
+    },
+    {
+      "id": "beks-96cdfd4001ba",
+      "name": "Деревенский",
+      "recipe": {
+        "beks-a13d1434c2d0": 250.0,
+        "beks-a556ed1c340b": 150.0,
+        "beks-268b7a2b7e82": 50.0,
+        "beks-3f4ba6b58684": 50.0
+      },
+      "source": "Деревенский.docx",
+      "sourceIngredients": [
+        {
+          "name": "ОТРУБИ",
+          "raw": "beks-a13d1434c2d0",
+          "qty": 250.0
+        },
+        {
+          "name": "ЭКСТРУДАТ",
+          "raw": "beks-a556ed1c340b",
+          "qty": 150.0
+        },
+        {
+          "name": "ГОРОХ",
+          "raw": "beks-268b7a2b7e82",
+          "qty": 50.0
+        },
+        {
+          "name": "ИЗВЕСНЯК",
+          "raw": "beks-3f4ba6b58684",
+          "qty": 50.0
+        }
+      ],
+      "sourceTotal": 500.0,
+      "sourceIssues": [
+        "Уточнить компонент: ЭКСТРУДАТ"
+      ],
+      "granule": "—",
+      "pack": "—",
+      "price": 0,
+      "priceKnown": false,
+      "stock": 0,
+      "stockKnown": false,
+      "repack": "—",
+      "tag": ""
+    },
+    {
+      "id": "beks-2f500860a39a",
+      "name": "КК ПЗК",
+      "recipe": {
+        "beks-a13d1434c2d0": 100.0,
+        "beks-afc222f7ea98": 100.0,
+        "beks-85eb56c2400f": 100.0,
+        "beks-f02369bcd634": 65.0,
+        "beks-a556ed1c340b": 50.0,
+        "corn": 40.0,
+        "beks-36e4e56dc9bf": 35.0,
+        "beks-899059860bab": 5.0,
+        "beks-c8d27199af30": 5.0
+      },
+      "source": "КК ПЗК.docx",
+      "sourceIngredients": [
+        {
+          "name": "ОТРУБИ",
+          "raw": "beks-a13d1434c2d0",
+          "qty": 100.0
+        },
+        {
+          "name": "ОВЕС",
+          "raw": "beks-afc222f7ea98",
+          "qty": 100.0
+        },
+        {
+          "name": "ТРАВЯННАЯ МУКА",
+          "raw": "beks-85eb56c2400f",
+          "qty": 100.0
+        },
+        {
+          "name": "ЯЧМЕНЬ",
+          "raw": "beks-f02369bcd634",
+          "qty": 65.0
+        },
+        {
+          "name": "ЭКСТРУДАТ",
+          "raw": "beks-a556ed1c340b",
+          "qty": 50.0
+        },
+        {
+          "name": "КУКУРУЗА",
+          "raw": "corn",
+          "qty": 40.0
+        },
+        {
+          "name": "ЖМЫХ",
+          "raw": "beks-36e4e56dc9bf",
+          "qty": 35.0
+        },
+        {
+          "name": "МЕЛ",
+          "raw": "beks-899059860bab",
+          "qty": 5.0
+        },
+        {
+          "name": "ПРЕМИКС",
+          "raw": "beks-c8d27199af30",
+          "qty": 5.0
+        }
+      ],
+      "sourceTotal": 500.0,
+      "sourceIssues": [
+        "Уточнить компонент: ТРАВЯННАЯ МУКА",
+        "Уточнить компонент: ЭКСТРУДАТ",
+        "Уточнить компонент: ЖМЫХ",
+        "Уточнить компонент: ПРЕМИКС"
+      ],
+      "granule": "4 мм",
+      "pack": "—",
+      "price": 0,
+      "priceKnown": false,
+      "stock": 0,
+      "stockKnown": false,
+      "repack": "—",
+      "tag": ""
+    },
+    {
+      "id": "beks-9575d9ad6250",
+      "name": "КК",
+      "recipe": {
+        "beks-f02369bcd634": 150.0,
+        "beks-9ee8a45d82d0": 50.0,
+        "beks-0b0c767ae209": 250.0,
+        "beks-dfef8e6f564c": 50.0,
+        "beks-a7c7bc8e9af2": 5.0,
+        "beks-fcbd99600a13": 5.0
+      },
+      "source": "КК.docx",
+      "sourceIngredients": [
+        {
+          "name": "Ячмень",
+          "raw": "beks-f02369bcd634",
+          "qty": 150.0
+        },
+        {
+          "name": "Экструдат общ.",
+          "raw": "beks-9ee8a45d82d0",
+          "qty": 50.0
+        },
+        {
+          "name": "Овёс / отруби",
+          "raw": "beks-0b0c767ae209",
+          "qty": 250.0
+        },
+        {
+          "name": "Жмых подсолнечный",
+          "raw": "beks-dfef8e6f564c",
+          "qty": 50.0
+        },
+        {
+          "name": "Премикс 32",
+          "raw": "beks-a7c7bc8e9af2",
+          "qty": 5.0
+        },
+        {
+          "name": "лингногран",
+          "raw": "beks-fcbd99600a13",
+          "qty": 5.0
+        }
+      ],
+      "sourceTotal": 510.0,
+      "sourceIssues": [
+        "Уточнить компонент: Овёс / отруби",
+        "Сумма 510 кг вместо 500 кг"
+      ],
+      "granule": "—",
+      "pack": "—",
+      "price": 0,
+      "priceKnown": false,
+      "stock": 0,
+      "stockKnown": false,
+      "repack": "—",
+      "tag": ""
+    },
+    {
+      "id": "beks-b2628beff0cf",
+      "name": "КП-2 Перепелка рост",
+      "recipe": {
+        "wheat": 220.0,
+        "beks-9ee8a45d82d0": 150.0,
+        "beks-f4ab4e98b15b": 75.0,
+        "beks-10ccc77c710b": 40.0,
+        "beks-db84ea5b310b": 5.0,
+        "beks-3f4ba6b58684": 5.0,
+        "beks-a7c7bc8e9af2": 7.5
+      },
+      "source": "КП-2 Перепелка рост.docx",
+      "sourceIngredients": [
+        {
+          "name": "Пшеница",
+          "raw": "wheat",
+          "qty": 220.0
+        },
+        {
+          "name": "Экструдат общ.",
+          "raw": "beks-9ee8a45d82d0",
+          "qty": 150.0
+        },
+        {
+          "name": "Соя полножир.",
+          "raw": "beks-f4ab4e98b15b",
+          "qty": 75.0
+        },
+        {
+          "name": "МКМ",
+          "raw": "beks-10ccc77c710b",
+          "qty": 40.0
+        },
+        {
+          "name": "Масло подсол.",
+          "raw": "beks-db84ea5b310b",
+          "qty": 5.0
+        },
+        {
+          "name": "известняк",
+          "raw": "beks-3f4ba6b58684",
+          "qty": 5.0
+        },
+        {
+          "name": "Премикс 32",
+          "raw": "beks-a7c7bc8e9af2",
+          "qty": 7.5
+        }
+      ],
+      "sourceTotal": 502.5,
+      "sourceIssues": [
+        "Сумма 502.5 кг вместо 500 кг"
+      ],
+      "granule": "—",
+      "pack": "—",
+      "price": 0,
+      "priceKnown": false,
+      "stock": 0,
+      "stockKnown": false,
+      "repack": "—",
+      "tag": ""
+    },
+    {
+      "id": "beks-aab8a84cca94",
+      "name": "КП-4 перепелка несушка",
+      "recipe": {
+        "wheat": 155.0,
+        "beks-9ee8a45d82d0": 100.0,
+        "beks-f4ab4e98b15b": 50.0,
+        "beks-dfef8e6f564c": 80.0,
+        "beks-10ccc77c710b": 50.0,
+        "beks-db84ea5b310b": 5.0,
+        "beks-f02a1025f76c": 25.0,
+        "beks-a215c57e9920": 25.0,
+        "beks-a7c7bc8e9af2": 7.5
+      },
+      "source": "КП-4 перепелка несушка.docx",
+      "sourceIngredients": [
+        {
+          "name": "Пшеница",
+          "raw": "wheat",
+          "qty": 155.0
+        },
+        {
+          "name": "Экструдат общ.",
+          "raw": "beks-9ee8a45d82d0",
+          "qty": 100.0
+        },
+        {
+          "name": "Соя полножирная",
+          "raw": "beks-f4ab4e98b15b",
+          "qty": 50.0
+        },
+        {
+          "name": "Жмых подсолнечный",
+          "raw": "beks-dfef8e6f564c",
+          "qty": 80.0
+        },
+        {
+          "name": "МКМ",
+          "raw": "beks-10ccc77c710b",
+          "qty": 50.0
+        },
+        {
+          "name": "Масло подсол.",
+          "raw": "beks-db84ea5b310b",
+          "qty": 5.0
+        },
+        {
+          "name": "Шрот соевый",
+          "raw": "beks-f02a1025f76c",
+          "qty": 25.0
+        },
+        {
+          "name": "Ракушка",
+          "raw": "beks-a215c57e9920",
+          "qty": 25.0
+        },
+        {
+          "name": "Премикс 32",
+          "raw": "beks-a7c7bc8e9af2",
+          "qty": 7.5
+        }
+      ],
+      "sourceTotal": 497.5,
+      "sourceIssues": [
+        "Сумма 497.5 кг вместо 500 кг"
+      ],
+      "granule": "—",
+      "pack": "—",
+      "price": 0,
+      "priceKnown": false,
+      "stock": 0,
+      "stockKnown": false,
+      "repack": "—",
+      "tag": ""
+    },
+    {
+      "id": "beks-6e92dd5b9859",
+      "name": "КРС",
+      "recipe": {
+        "beks-f02369bcd634": 200.0,
+        "beks-dfef8e6f564c": 75.0,
+        "beks-afc222f7ea98": 200.0,
+        "beks-3f4ba6b58684": 20.0,
+        "beks-a7c7bc8e9af2": 5.0
+      },
+      "source": "КРС.docx",
+      "sourceIngredients": [
+        {
+          "name": "Ячмень",
+          "raw": "beks-f02369bcd634",
+          "qty": 200.0
+        },
+        {
+          "name": "Жмых подсолнечный",
+          "raw": "beks-dfef8e6f564c",
+          "qty": 75.0
+        },
+        {
+          "name": "овёс",
+          "raw": "beks-afc222f7ea98",
+          "qty": 200.0
+        },
+        {
+          "name": "Известняк",
+          "raw": "beks-3f4ba6b58684",
+          "qty": 20.0
+        },
+        {
+          "name": "Премикс 32",
+          "raw": "beks-a7c7bc8e9af2",
+          "qty": 5.0
+        }
+      ],
+      "sourceTotal": 500.0,
+      "sourceIssues": [],
+      "granule": "—",
+      "pack": "—",
+      "price": 0,
+      "priceKnown": false,
+      "stock": 0,
+      "stockKnown": false,
+      "repack": "—",
+      "tag": ""
+    },
+    {
+      "id": "beks-1b2ca48a2727",
+      "name": "КС-21 Старт-рост",
+      "recipe": {
+        "wheat": 220.0,
+        "beks-9ee8a45d82d0": 150.0,
+        "beks-f4ab4e98b15b": 75.0,
+        "beks-10ccc77c710b": 40.0,
+        "beks-db84ea5b310b": 5.0,
+        "beks-a7c7bc8e9af2": 7.5
+      },
+      "source": "КС-21 Старт-рост.docx",
+      "sourceIngredients": [
+        {
+          "name": "Пшеница",
+          "raw": "wheat",
+          "qty": 220.0
+        },
+        {
+          "name": "Экструдат общ.",
+          "raw": "beks-9ee8a45d82d0",
+          "qty": 150.0
+        },
+        {
+          "name": "Соя полножир.",
+          "raw": "beks-f4ab4e98b15b",
+          "qty": 75.0
+        },
+        {
+          "name": "МКМ",
+          "raw": "beks-10ccc77c710b",
+          "qty": 40.0
+        },
+        {
+          "name": "Масло подсол.",
+          "raw": "beks-db84ea5b310b",
+          "qty": 5.0
+        },
+        {
+          "name": "Премикс 32",
+          "raw": "beks-a7c7bc8e9af2",
+          "qty": 7.5
+        }
+      ],
+      "sourceTotal": 497.5,
+      "sourceIssues": [
+        "Сумма 497.5 кг вместо 500 кг"
+      ],
+      "granule": "—",
+      "pack": "10 кг",
+      "price": 0,
+      "priceKnown": false,
+      "stock": 0,
+      "stockKnown": false,
+      "repack": "—",
+      "tag": ""
+    },
+    {
+      "id": "beks-f907f8de2226",
+      "name": "КС-24 Старт",
+      "recipe": {
+        "wheat": 175.0,
+        "beks-9ee8a45d82d0": 150.0,
+        "beks-f4ab4e98b15b": 50.0,
+        "beks-f02a1025f76c": 50.0,
+        "beks-491e900ed711": 20.0,
+        "beks-2ea9f05d21a2": 35.0,
+        "beks-899059860bab": 10.0,
+        "beks-a7c7bc8e9af2": 10.0
+      },
+      "source": "КС-24 Старт.docx",
+      "sourceIngredients": [
+        {
+          "name": "Пшеница",
+          "raw": "wheat",
+          "qty": 175.0
+        },
+        {
+          "name": "Экструдат ОБЩИЙ",
+          "raw": "beks-9ee8a45d82d0",
+          "qty": 150.0
+        },
+        {
+          "name": "Соя полножирная",
+          "raw": "beks-f4ab4e98b15b",
+          "qty": 50.0
+        },
+        {
+          "name": "Шрот соевый",
+          "raw": "beks-f02a1025f76c",
+          "qty": 50.0
+        },
+        {
+          "name": "Кукурузный глютен",
+          "raw": "beks-491e900ed711",
+          "qty": 20.0
+        },
+        {
+          "name": "Рыбная Мука",
+          "raw": "beks-2ea9f05d21a2",
+          "qty": 35.0
+        },
+        {
+          "name": "Мел",
+          "raw": "beks-899059860bab",
+          "qty": 10.0
+        },
+        {
+          "name": "Премикс 32",
+          "raw": "beks-a7c7bc8e9af2",
+          "qty": 10.0
+        }
+      ],
+      "sourceTotal": 500.0,
+      "sourceIssues": [],
+      "granule": "—",
+      "pack": "10 кг",
+      "price": 0,
+      "priceKnown": false,
+      "stock": 0,
+      "stockKnown": false,
+      "repack": "—",
+      "tag": ""
+    },
+    {
+      "id": "beks-d2e98ab3f0ef",
+      "name": "КС-26 Старт",
+      "recipe": {
+        "wheat": 200.0,
+        "beks-9ee8a45d82d0": 50.0,
+        "beks-f4ab4e98b15b": 90.0,
+        "beks-f02a1025f76c": 70.0,
+        "beks-491e900ed711": 15.0,
+        "beks-2ea9f05d21a2": 20.0,
+        "beks-899059860bab": 10.0,
+        "beks-a7c7bc8e9af2": 10.0,
+        "beks-10ccc77c710b": 25.0,
+        "beks-8b3c965ad09c": 10.0
+      },
+      "source": "КС-26 Старт.docx",
+      "sourceIngredients": [
+        {
+          "name": "Пшеница",
+          "raw": "wheat",
+          "qty": 200.0
+        },
+        {
+          "name": "Экструдат ОБЩИЙ.",
+          "raw": "beks-9ee8a45d82d0",
+          "qty": 50.0
+        },
+        {
+          "name": "Соя полножирная",
+          "raw": "beks-f4ab4e98b15b",
+          "qty": 90.0
+        },
+        {
+          "name": "Шрот соевый",
+          "raw": "beks-f02a1025f76c",
+          "qty": 70.0
+        },
+        {
+          "name": "Кукурузный глютен",
+          "raw": "beks-491e900ed711",
+          "qty": 15.0
+        },
+        {
+          "name": "Рыбная Мука",
+          "raw": "beks-2ea9f05d21a2",
+          "qty": 20.0
+        },
+        {
+          "name": "Мел",
+          "raw": "beks-899059860bab",
+          "qty": 10.0
+        },
+        {
+          "name": "Премикс 32",
+          "raw": "beks-a7c7bc8e9af2",
+          "qty": 10.0
+        },
+        {
+          "name": "МКМ",
+          "raw": "beks-10ccc77c710b",
+          "qty": 25.0
+        },
+        {
+          "name": "Масло",
+          "raw": "beks-8b3c965ad09c",
+          "qty": 10.0
+        }
+      ],
+      "sourceTotal": 500.0,
+      "sourceIssues": [
+        "Уточнить компонент: Масло"
+      ],
+      "granule": "—",
+      "pack": "10 кг",
+      "price": 0,
+      "priceKnown": false,
+      "stock": 0,
+      "stockKnown": false,
+      "repack": "—",
+      "tag": ""
+    },
+    {
+      "id": "beks-9053e849c38b",
+      "name": "КС-28 старт индейка россыпь",
+      "recipe": {
+        "wheat": 150.0,
+        "beks-9ee8a45d82d0": 120.0,
+        "beks-f4ab4e98b15b": 100.0,
+        "beks-f02a1025f76c": 70.0,
+        "beks-491e900ed711": 15.0,
+        "beks-2ea9f05d21a2": 35.0,
+        "beks-a7c7bc8e9af2": 10.0
+      },
+      "source": "КС-28 старт индейка россыпь.docx",
+      "sourceIngredients": [
+        {
+          "name": "Пшеница",
+          "raw": "wheat",
+          "qty": 150.0
+        },
+        {
+          "name": "Экструдат ОБЩИЙ",
+          "raw": "beks-9ee8a45d82d0",
+          "qty": 120.0
+        },
+        {
+          "name": "Соя полножирная",
+          "raw": "beks-f4ab4e98b15b",
+          "qty": 100.0
+        },
+        {
+          "name": "Шрот соевый",
+          "raw": "beks-f02a1025f76c",
+          "qty": 70.0
+        },
+        {
+          "name": "Кукурузный глютен",
+          "raw": "beks-491e900ed711",
+          "qty": 15.0
+        },
+        {
+          "name": "Мука Рыбная",
+          "raw": "beks-2ea9f05d21a2",
+          "qty": 35.0
+        },
+        {
+          "name": "Премикс 32",
+          "raw": "beks-a7c7bc8e9af2",
+          "qty": 10.0
+        }
+      ],
+      "sourceTotal": 500.0,
+      "sourceIssues": [],
+      "granule": "—",
+      "pack": "10 кг",
+      "price": 0,
+      "priceKnown": false,
+      "stock": 0,
+      "stockKnown": false,
+      "repack": "—",
+      "tag": ""
+    },
+    {
+      "id": "beks-50933b69d8f1",
+      "name": "КС-28 старт перепелка гранула",
+      "recipe": {
+        "wheat": 180.0,
+        "beks-9ee8a45d82d0": 75.0,
+        "beks-f4ab4e98b15b": 90.0,
+        "beks-f02a1025f76c": 50.0,
+        "beks-491e900ed711": 15.0,
+        "beks-2ea9f05d21a2": 35.0,
+        "beks-a7c7bc8e9af2": 10.0,
+        "beks-10ccc77c710b": 35.0,
+        "beks-db84ea5b310b": 10.0
+      },
+      "source": "КС-28 старт перепелка гранула.docx",
+      "sourceIngredients": [
+        {
+          "name": "Пшеница",
+          "raw": "wheat",
+          "qty": 180.0
+        },
+        {
+          "name": "Экструдат ОБЩИЙ",
+          "raw": "beks-9ee8a45d82d0",
+          "qty": 75.0
+        },
+        {
+          "name": "Соя полножирная",
+          "raw": "beks-f4ab4e98b15b",
+          "qty": 90.0
+        },
+        {
+          "name": "Шрот соевый",
+          "raw": "beks-f02a1025f76c",
+          "qty": 50.0
+        },
+        {
+          "name": "Кукурузный глютен",
+          "raw": "beks-491e900ed711",
+          "qty": 15.0
+        },
+        {
+          "name": "Мука Рыбная",
+          "raw": "beks-2ea9f05d21a2",
+          "qty": 35.0
+        },
+        {
+          "name": "Премикс 32",
+          "raw": "beks-a7c7bc8e9af2",
+          "qty": 10.0
+        },
+        {
+          "name": "МКМ",
+          "raw": "beks-10ccc77c710b",
+          "qty": 35.0
+        },
+        {
+          "name": "Масло подсолнечное",
+          "raw": "beks-db84ea5b310b",
+          "qty": 10.0
+        }
+      ],
+      "sourceTotal": 500.0,
+      "sourceIssues": [],
+      "granule": "—",
+      "pack": "—",
+      "price": 0,
+      "priceKnown": false,
+      "stock": 0,
+      "stockKnown": false,
+      "repack": "—",
+      "tag": ""
+    },
+    {
+      "id": "beks-5c106556bd5e",
+      "name": "Лошадь для рабочих лошадей",
+      "recipe": {
+        "beks-afc222f7ea98": 400.0,
+        "beks-dfef8e6f564c": 75.0,
+        "beks-e9e7ccc09baf": 15.0,
+        "beks-899059860bab": 10.0
+      },
+      "source": "Лошадь для рабочих лошадей.docx",
+      "sourceIngredients": [
+        {
+          "name": "Овес",
+          "raw": "beks-afc222f7ea98",
+          "qty": 400.0
+        },
+        {
+          "name": "Жмых подс.",
+          "raw": "beks-dfef8e6f564c",
+          "qty": 75.0
+        },
+        {
+          "name": "Соль",
+          "raw": "beks-e9e7ccc09baf",
+          "qty": 15.0
+        },
+        {
+          "name": "Мел кормовой",
+          "raw": "beks-899059860bab",
+          "qty": 10.0
+        }
+      ],
+      "sourceTotal": 500.0,
+      "sourceIssues": [],
+      "granule": "8 мм",
+      "pack": "—",
+      "price": 0,
+      "priceKnown": false,
+      "stock": 0,
+      "stockKnown": false,
+      "repack": "—",
+      "tag": ""
+    },
+    {
+      "id": "beks-1cdf8db09693",
+      "name": "МИКС",
+      "recipe": {
+        "beks-f02369bcd634": 100.0,
+        "wheat": 100.0,
+        "beks-a13d1434c2d0": 100.0,
+        "beks-268b7a2b7e82": 100.0,
+        "corn": 100.0
+      },
+      "source": "МИКС - копия.docx",
+      "sourceIngredients": [
+        {
+          "name": "Ячмень",
+          "raw": "beks-f02369bcd634",
+          "qty": 100.0
+        },
+        {
+          "name": "Пшеница.",
+          "raw": "wheat",
+          "qty": 100.0
+        },
+        {
+          "name": "отруби",
+          "raw": "beks-a13d1434c2d0",
+          "qty": 100.0
+        },
+        {
+          "name": "Горох",
+          "raw": "beks-268b7a2b7e82",
+          "qty": 100.0
+        },
+        {
+          "name": "Кукуруза",
+          "raw": "corn",
+          "qty": 100.0
+        }
+      ],
+      "sourceTotal": 500.0,
+      "sourceIssues": [],
+      "granule": "—",
+      "pack": "—",
+      "price": 0,
+      "priceKnown": false,
+      "stock": 0,
+      "stockKnown": false,
+      "repack": "—",
+      "tag": ""
+    },
+    {
+      "id": "beks-1508c9342b3e",
+      "name": "МРС",
+      "recipe": {
+        "beks-f02369bcd634": 305.0,
+        "beks-36e4e56dc9bf": 75.0,
+        "beks-afc222f7ea98": 50.0,
+        "beks-3d8077eb01a1": 50.0,
+        "beks-92b698ceaeab": 7.5,
+        "beks-899059860bab": 7.5,
+        "beks-e9e7ccc09baf": 5.0
+      },
+      "source": "МРС.docx",
+      "sourceIngredients": [
+        {
+          "name": "ЯЧМЕНЬ",
+          "raw": "beks-f02369bcd634",
+          "qty": 305.0
+        },
+        {
+          "name": "ЖМЫХ",
+          "raw": "beks-36e4e56dc9bf",
+          "qty": 75.0
+        },
+        {
+          "name": "ОВЕС",
+          "raw": "beks-afc222f7ea98",
+          "qty": 50.0
+        },
+        {
+          "name": "ЖОМ СВЕКЛОВИЧНЫЙ",
+          "raw": "beks-3d8077eb01a1",
+          "qty": 50.0
+        },
+        {
+          "name": "МОНОКАЛЬЦИЙ",
+          "raw": "beks-92b698ceaeab",
+          "qty": 7.5
+        },
+        {
+          "name": "МЕЛ",
+          "raw": "beks-899059860bab",
+          "qty": 7.5
+        },
+        {
+          "name": "СОЛЬ",
+          "raw": "beks-e9e7ccc09baf",
+          "qty": 5.0
+        }
+      ],
+      "sourceTotal": 500.0,
+      "sourceIssues": [
+        "Уточнить компонент: ЖМЫХ",
+        "Уточнить компонент: МОНОКАЛЬЦИЙ"
+      ],
+      "granule": "4 мм",
+      "pack": "—",
+      "price": 0,
+      "priceKnown": false,
+      "stock": 0,
+      "stockKnown": false,
+      "repack": "—",
+      "tag": ""
+    },
+    {
+      "id": "beks-4150c6bd6f46",
+      "name": "откорм КРС",
+      "recipe": {
+        "beks-f02369bcd634": 245.0,
+        "beks-a13d1434c2d0": 100.0,
+        "beks-36e4e56dc9bf": 80.0,
+        "beks-f02a1025f76c": 50.0,
+        "beks-902292734d92": 20.0,
+        "beks-2a30a692564a": 5.0
+      },
+      "source": "откорм КРС.docx",
+      "sourceIngredients": [
+        {
+          "name": "ячмень",
+          "raw": "beks-f02369bcd634",
+          "qty": 245.0
+        },
+        {
+          "name": "отруби",
+          "raw": "beks-a13d1434c2d0",
+          "qty": 100.0
+        },
+        {
+          "name": "жмых",
+          "raw": "beks-36e4e56dc9bf",
+          "qty": 80.0
+        },
+        {
+          "name": "Шрот соевый",
+          "raw": "beks-f02a1025f76c",
+          "qty": 50.0
+        },
+        {
+          "name": "известь",
+          "raw": "beks-902292734d92",
+          "qty": 20.0
+        },
+        {
+          "name": "Премикс КРС",
+          "raw": "beks-2a30a692564a",
+          "qty": 5.0
+        }
+      ],
+      "sourceTotal": 500.0,
+      "sourceIssues": [
+        "Уточнить компонент: жмых",
+        "Уточнить компонент: известь"
+      ],
+      "granule": "4 мм",
+      "pack": "—",
+      "price": 0,
+      "priceKnown": false,
+      "stock": 0,
+      "stockKnown": false,
+      "repack": "—",
+      "tag": ""
+    },
+    {
+      "id": "beks-516429c8b613",
+      "name": "ПК-1 Рост",
+      "recipe": {
+        "wheat": 265.0,
+        "beks-9ee8a45d82d0": 100.0,
+        "beks-f4ab4e98b15b": 75.0,
+        "beks-10ccc77c710b": 40.0,
+        "beks-db84ea5b310b": 5.0,
+        "beks-3f4ba6b58684": 10.0,
+        "beks-a7c7bc8e9af2": 7.5
+      },
+      "source": "ПК-1 Рост.docx",
+      "sourceIngredients": [
+        {
+          "name": "Пшеница",
+          "raw": "wheat",
+          "qty": 265.0
+        },
+        {
+          "name": "Экструдат общ.",
+          "raw": "beks-9ee8a45d82d0",
+          "qty": 100.0
+        },
+        {
+          "name": "Соя полножир.",
+          "raw": "beks-f4ab4e98b15b",
+          "qty": 75.0
+        },
+        {
+          "name": "МКМ",
+          "raw": "beks-10ccc77c710b",
+          "qty": 40.0
+        },
+        {
+          "name": "Масло подсол.",
+          "raw": "beks-db84ea5b310b",
+          "qty": 5.0
+        },
+        {
+          "name": "Известняк",
+          "raw": "beks-3f4ba6b58684",
+          "qty": 10.0
+        },
+        {
+          "name": "Премикс 32",
+          "raw": "beks-a7c7bc8e9af2",
+          "qty": 7.5
+        }
+      ],
+      "sourceTotal": 502.5,
+      "sourceIssues": [
+        "Сумма 502.5 кг вместо 500 кг"
+      ],
+      "granule": "—",
+      "pack": "30 кг",
+      "price": 0,
+      "priceKnown": false,
+      "stock": 0,
+      "stockKnown": false,
+      "repack": "—",
+      "tag": ""
+    },
+    {
+      "id": "beks-b39798368fe8",
+      "name": "ПК-11 Индейка рост",
+      "recipe": {
+        "wheat": 175.0,
+        "beks-9ee8a45d82d0": 150.0,
+        "beks-f4ab4e98b15b": 50.0,
+        "beks-f02a1025f76c": 50.0,
+        "beks-491e900ed711": 20.0,
+        "beks-2ea9f05d21a2": 35.0,
+        "beks-a215c57e9920": 10.0,
+        "beks-a7c7bc8e9af2": 10.0
+      },
+      "source": "ПК-11 Индейка рост.docx",
+      "sourceIngredients": [
+        {
+          "name": "Пшеница",
+          "raw": "wheat",
+          "qty": 175.0
+        },
+        {
+          "name": "Экструдат ОБЩИЙ",
+          "raw": "beks-9ee8a45d82d0",
+          "qty": 150.0
+        },
+        {
+          "name": "Соя полножирная",
+          "raw": "beks-f4ab4e98b15b",
+          "qty": 50.0
+        },
+        {
+          "name": "Шрот соевый",
+          "raw": "beks-f02a1025f76c",
+          "qty": 50.0
+        },
+        {
+          "name": "Кукурузный глютен",
+          "raw": "beks-491e900ed711",
+          "qty": 20.0
+        },
+        {
+          "name": "Рыбная Мука",
+          "raw": "beks-2ea9f05d21a2",
+          "qty": 35.0
+        },
+        {
+          "name": "ракушка",
+          "raw": "beks-a215c57e9920",
+          "qty": 10.0
+        },
+        {
+          "name": "Премикс 32",
+          "raw": "beks-a7c7bc8e9af2",
+          "qty": 10.0
+        }
+      ],
+      "sourceTotal": 500.0,
+      "sourceIssues": [],
+      "granule": "—",
+      "pack": "—",
+      "price": 0,
+      "priceKnown": false,
+      "stock": 0,
+      "stockKnown": false,
+      "repack": "—",
+      "tag": ""
+    },
+    {
+      "id": "beks-7971de869fa9",
+      "name": "ПК-12 Индейка откорм",
+      "recipe": {
+        "wheat": 220.0,
+        "beks-9ee8a45d82d0": 150.0,
+        "beks-f4ab4e98b15b": 75.0,
+        "beks-10ccc77c710b": 40.0,
+        "beks-db84ea5b310b": 5.0,
+        "beks-a7c7bc8e9af2": 7.5
+      },
+      "source": "ПК-12 Индейка откорм.docx",
+      "sourceIngredients": [
+        {
+          "name": "Пшеница",
+          "raw": "wheat",
+          "qty": 220.0
+        },
+        {
+          "name": "Экструдат общ.",
+          "raw": "beks-9ee8a45d82d0",
+          "qty": 150.0
+        },
+        {
+          "name": "Соя полножир.",
+          "raw": "beks-f4ab4e98b15b",
+          "qty": 75.0
+        },
+        {
+          "name": "МКМ",
+          "raw": "beks-10ccc77c710b",
+          "qty": 40.0
+        },
+        {
+          "name": "Масло подсол.",
+          "raw": "beks-db84ea5b310b",
+          "qty": 5.0
+        },
+        {
+          "name": "Премикс 32",
+          "raw": "beks-a7c7bc8e9af2",
+          "qty": 7.5
+        }
+      ],
+      "sourceTotal": 497.5,
+      "sourceIssues": [
+        "Сумма 497.5 кг вместо 500 кг"
+      ],
+      "granule": "—",
+      "pack": "—",
+      "price": 0,
+      "priceKnown": false,
+      "stock": 0,
+      "stockKnown": false,
+      "repack": "—",
+      "tag": ""
+    },
+    {
+      "id": "beks-12c34d0ab9f1",
+      "name": "ПК-13 Индейка финиш",
+      "recipe": {
+        "wheat": 260.0,
+        "beks-9ee8a45d82d0": 200.0,
+        "beks-10ccc77c710b": 35.0,
+        "beks-a7c7bc8e9af2": 5.0
+      },
+      "source": "ПК-13 Индейка финиш.docx",
+      "sourceIngredients": [
+        {
+          "name": "Пшеница",
+          "raw": "wheat",
+          "qty": 260.0
+        },
+        {
+          "name": "Экструдат общ.",
+          "raw": "beks-9ee8a45d82d0",
+          "qty": 200.0
+        },
+        {
+          "name": "МКМ",
+          "raw": "beks-10ccc77c710b",
+          "qty": 35.0
+        },
+        {
+          "name": "Премикс 32",
+          "raw": "beks-a7c7bc8e9af2",
+          "qty": 5.0
+        }
+      ],
+      "sourceTotal": 500.0,
+      "sourceIssues": [],
+      "granule": "2 мм",
+      "pack": "—",
+      "price": 0,
+      "priceKnown": false,
+      "stock": 0,
+      "stockKnown": false,
+      "repack": "—",
+      "tag": ""
+    },
+    {
+      "id": "beks-2f22e1f522de",
+      "name": "ПК-2 Бройлер ПРОФИ рост",
+      "recipe": {
+        "wheat": 230.0,
+        "beks-9ee8a45d82d0": 100.0,
+        "beks-f4ab4e98b15b": 100.0,
+        "beks-10ccc77c710b": 40.0,
+        "beks-db84ea5b310b": 10.0,
+        "beks-a7c7bc8e9af2": 10.0,
+        "beks-619ab1640ead": 10.0
+      },
+      "source": "ПК-2 Бройлер ПРОФИ рост.docx",
+      "sourceIngredients": [
+        {
+          "name": "Пшеница",
+          "raw": "wheat",
+          "qty": 230.0
+        },
+        {
+          "name": "Экструдат общ.",
+          "raw": "beks-9ee8a45d82d0",
+          "qty": 100.0
+        },
+        {
+          "name": "Соя полножир.",
+          "raw": "beks-f4ab4e98b15b",
+          "qty": 100.0
+        },
+        {
+          "name": "МКМ",
+          "raw": "beks-10ccc77c710b",
+          "qty": 40.0
+        },
+        {
+          "name": "Масло подсол.",
+          "raw": "beks-db84ea5b310b",
+          "qty": 10.0
+        },
+        {
+          "name": "Премикс 32",
+          "raw": "beks-a7c7bc8e9af2",
+          "qty": 10.0
+        },
+        {
+          "name": "Глютен",
+          "raw": "beks-619ab1640ead",
+          "qty": 10.0
+        }
+      ],
+      "sourceTotal": 500.0,
+      "sourceIssues": [
+        "Уточнить компонент: Глютен"
+      ],
+      "granule": "—",
+      "pack": "—",
+      "price": 0,
+      "priceKnown": false,
+      "stock": 0,
+      "stockKnown": false,
+      "repack": "—",
+      "tag": ""
+    },
+    {
+      "id": "pk2",
+      "name": "ПК-2 Бройлер рост",
+      "recipe": {
+        "wheat": 220.0,
+        "beks-9ee8a45d82d0": 150.0,
+        "beks-f4ab4e98b15b": 75.0,
+        "beks-10ccc77c710b": 40.0,
+        "beks-db84ea5b310b": 5.0,
+        "beks-a7c7bc8e9af2": 7.5
+      },
+      "source": "ПК-2 Бройлер рост.docx",
+      "sourceIngredients": [
+        {
+          "name": "Пшеница",
+          "raw": "wheat",
+          "qty": 220.0
+        },
+        {
+          "name": "Экструдат общ.",
+          "raw": "beks-9ee8a45d82d0",
+          "qty": 150.0
+        },
+        {
+          "name": "Соя полножир.",
+          "raw": "beks-f4ab4e98b15b",
+          "qty": 75.0
+        },
+        {
+          "name": "МКМ",
+          "raw": "beks-10ccc77c710b",
+          "qty": 40.0
+        },
+        {
+          "name": "Масло подсол.",
+          "raw": "beks-db84ea5b310b",
+          "qty": 5.0
+        },
+        {
+          "name": "Премикс 32",
+          "raw": "beks-a7c7bc8e9af2",
+          "qty": 7.5
+        }
+      ],
+      "sourceTotal": 497.5,
+      "sourceIssues": [
+        "Сумма 497.5 кг вместо 500 кг"
+      ],
+      "granule": "—",
+      "pack": "—",
+      "price": 0,
+      "priceKnown": false,
+      "stock": 0,
+      "stockKnown": false,
+      "repack": "—",
+      "tag": ""
+    },
+    {
+      "id": "beks-a29bd05df579",
+      "name": "ПК-22 Откорм",
+      "recipe": {
+        "wheat": 260.0,
+        "beks-9ee8a45d82d0": 200.0,
+        "beks-10ccc77c710b": 35.0,
+        "beks-a7c7bc8e9af2": 5.0
+      },
+      "source": "ПК-22 Откорм.docx",
+      "sourceIngredients": [
+        {
+          "name": "Пшеница",
+          "raw": "wheat",
+          "qty": 260.0
+        },
+        {
+          "name": "Экструдат общ.",
+          "raw": "beks-9ee8a45d82d0",
+          "qty": 200.0
+        },
+        {
+          "name": "МКМ",
+          "raw": "beks-10ccc77c710b",
+          "qty": 35.0
+        },
+        {
+          "name": "Премикс 32",
+          "raw": "beks-a7c7bc8e9af2",
+          "qty": 5.0
+        }
+      ],
+      "sourceTotal": 500.0,
+      "sourceIssues": [],
+      "granule": "—",
+      "pack": "—",
+      "price": 0,
+      "priceKnown": false,
+      "stock": 0,
+      "stockKnown": false,
+      "repack": "—",
+      "tag": ""
+    },
+    {
+      "id": "beks-5b30ba2814d0",
+      "name": "ПК-3",
+      "recipe": {
+        "wheat": 300.0,
+        "beks-a556ed1c340b": 50.0,
+        "beks-dfef8e6f564c": 75.0,
+        "beks-10ccc77c710b": 40.0,
+        "beks-db84ea5b310b": 5.0,
+        "beks-3f4ba6b58684": 20.0,
+        "beks-a7c7bc8e9af2": 10.0
+      },
+      "source": "ПК-3.docx",
+      "sourceIngredients": [
+        {
+          "name": "Пшеница",
+          "raw": "wheat",
+          "qty": 300.0
+        },
+        {
+          "name": "Экструдат",
+          "raw": "beks-a556ed1c340b",
+          "qty": 50.0
+        },
+        {
+          "name": "Жмых подсолнечный",
+          "raw": "beks-dfef8e6f564c",
+          "qty": 75.0
+        },
+        {
+          "name": "МКМ",
+          "raw": "beks-10ccc77c710b",
+          "qty": 40.0
+        },
+        {
+          "name": "Масло подсол.",
+          "raw": "beks-db84ea5b310b",
+          "qty": 5.0
+        },
+        {
+          "name": "Известняк",
+          "raw": "beks-3f4ba6b58684",
+          "qty": 20.0
+        },
+        {
+          "name": "Премикс 32",
+          "raw": "beks-a7c7bc8e9af2",
+          "qty": 10.0
+        }
+      ],
+      "sourceTotal": 500.0,
+      "sourceIssues": [
+        "Уточнить компонент: Экструдат"
+      ],
+      "granule": "—",
+      "pack": "—",
+      "price": 0,
+      "priceKnown": false,
+      "stock": 0,
+      "stockKnown": false,
+      "repack": "—",
+      "tag": ""
+    },
+    {
+      "id": "beks-c6c507da521f",
+      "name": "ПК-4",
+      "recipe": {
+        "wheat": 160.0,
+        "beks-9ee8a45d82d0": 150.0,
+        "beks-a13d1434c2d0": 100.0,
+        "beks-3f4ba6b58684": 50.0,
+        "beks-a7c7bc8e9af2": 5.0,
+        "beks-10ccc77c710b": 35.0
+      },
+      "source": "ПК-4.docx",
+      "sourceIngredients": [
+        {
+          "name": "Пшеница",
+          "raw": "wheat",
+          "qty": 160.0
+        },
+        {
+          "name": "Экструдат общ.",
+          "raw": "beks-9ee8a45d82d0",
+          "qty": 150.0
+        },
+        {
+          "name": "Отруби",
+          "raw": "beks-a13d1434c2d0",
+          "qty": 100.0
+        },
+        {
+          "name": "Известняк",
+          "raw": "beks-3f4ba6b58684",
+          "qty": 50.0
+        },
+        {
+          "name": "Премикс 32",
+          "raw": "beks-a7c7bc8e9af2",
+          "qty": 5.0
+        },
+        {
+          "name": "МКМ",
+          "raw": "beks-10ccc77c710b",
+          "qty": 35.0
+        }
+      ],
+      "sourceTotal": 500.0,
+      "sourceIssues": [],
+      "granule": "2 мм",
+      "pack": "—",
+      "price": 0,
+      "priceKnown": false,
+      "stock": 0,
+      "stockKnown": false,
+      "repack": "—",
+      "tag": ""
+    },
+    {
+      "id": "pk5",
+      "name": "ПК-5 Бройлер финиш",
+      "recipe": {
+        "wheat": 260.0,
+        "beks-9ee8a45d82d0": 200.0,
+        "beks-10ccc77c710b": 35.0,
+        "beks-a7c7bc8e9af2": 5.0
+      },
+      "source": "ПК-5 Бройлер финиш.docx",
+      "sourceIngredients": [
+        {
+          "name": "Пшеница",
+          "raw": "wheat",
+          "qty": 260.0
+        },
+        {
+          "name": "Экструдат общ.",
+          "raw": "beks-9ee8a45d82d0",
+          "qty": 200.0
+        },
+        {
+          "name": "МКМ",
+          "raw": "beks-10ccc77c710b",
+          "qty": 35.0
+        },
+        {
+          "name": "Премикс 32",
+          "raw": "beks-a7c7bc8e9af2",
+          "qty": 5.0
+        }
+      ],
+      "sourceTotal": 500.0,
+      "sourceIssues": [],
+      "granule": "2 мм",
+      "pack": "—",
+      "price": 0,
+      "priceKnown": false,
+      "stock": 0,
+      "stockKnown": false,
+      "repack": "—",
+      "tag": ""
+    },
+    {
+      "id": "beks-776a03c4a450",
+      "name": "ПКП-4",
+      "recipe": {
+        "wheat": 300.0,
+        "beks-9ee8a45d82d0": 50.0,
+        "beks-dfef8e6f564c": 75.0,
+        "beks-10ccc77c710b": 30.0,
+        "beks-db84ea5b310b": 5.0,
+        "beks-3f4ba6b58684": 35.0,
+        "beks-a7c7bc8e9af2": 7.5
+      },
+      "source": "ПКП-4.docx",
+      "sourceIngredients": [
+        {
+          "name": "Пшеница",
+          "raw": "wheat",
+          "qty": 300.0
+        },
+        {
+          "name": "Экструдат общ.",
+          "raw": "beks-9ee8a45d82d0",
+          "qty": 50.0
+        },
+        {
+          "name": "Жмых подсолнечный",
+          "raw": "beks-dfef8e6f564c",
+          "qty": 75.0
+        },
+        {
+          "name": "МКМ",
+          "raw": "beks-10ccc77c710b",
+          "qty": 30.0
+        },
+        {
+          "name": "Масло подсол",
+          "raw": "beks-db84ea5b310b",
+          "qty": 5.0
+        },
+        {
+          "name": "Известняк",
+          "raw": "beks-3f4ba6b58684",
+          "qty": 35.0
+        },
+        {
+          "name": "Премикс 32",
+          "raw": "beks-a7c7bc8e9af2",
+          "qty": 7.5
+        }
+      ],
+      "sourceTotal": 502.5,
+      "sourceIssues": [
+        "Сумма 502.5 кг вместо 500 кг"
+      ],
+      "granule": "—",
+      "pack": "—",
+      "price": 0,
+      "priceKnown": false,
+      "stock": 0,
+      "stockKnown": false,
+      "repack": "—",
+      "tag": ""
+    },
+    {
+      "id": "beks-f1f46545ab71",
+      "name": "ПРЕДСТАРТ ПОРОСЯТА",
+      "recipe": {
+        "beks-f02369bcd634": 116.0,
+        "corn": 125.0,
+        "beks-a556ed1c340b": 125.0,
+        "beks-f02a1025f76c": 75.0,
+        "beks-3cfbe299c334": 25.0,
+        "beks-2ea9f05d21a2": 25.0,
+        "beks-e60559537496": 7.5
+      },
+      "source": "ПРЕДСТАРТ ПОРОСЯТА.docx",
+      "sourceIngredients": [
+        {
+          "name": "ЯЧМЕНЬ",
+          "raw": "beks-f02369bcd634",
+          "qty": 116.0
+        },
+        {
+          "name": "КУКУРУЗА",
+          "raw": "corn",
+          "qty": 125.0
+        },
+        {
+          "name": "ЭКСТРУДАТ",
+          "raw": "beks-a556ed1c340b",
+          "qty": 125.0
+        },
+        {
+          "name": "ШРОТ СОЕВЫЙ",
+          "raw": "beks-f02a1025f76c",
+          "qty": 75.0
+        },
+        {
+          "name": "ЗЦМ",
+          "raw": "beks-3cfbe299c334",
+          "qty": 25.0
+        },
+        {
+          "name": "РЫБНАЯ МУКА",
+          "raw": "beks-2ea9f05d21a2",
+          "qty": 25.0
+        },
+        {
+          "name": "ПРЕМИКС СВИННОЙ",
+          "raw": "beks-e60559537496",
+          "qty": 7.5
+        }
+      ],
+      "sourceTotal": 498.5,
+      "sourceIssues": [
+        "Уточнить компонент: ЭКСТРУДАТ",
+        "Сумма 498.5 кг вместо 500 кг"
+      ],
+      "granule": "4 мм",
+      "pack": "—",
+      "price": 0,
+      "priceKnown": false,
+      "stock": 0,
+      "stockKnown": false,
+      "repack": "—",
+      "tag": ""
+    },
+    {
+      "id": "beks-debeb0831868",
+      "name": "СКО",
+      "recipe": {
+        "beks-f02369bcd634": 170.0,
+        "beks-9ee8a45d82d0": 150.0,
+        "beks-a13d1434c2d0": 175.0,
+        "beks-4ef16cf171db": 5.0
+      },
+      "source": "СКО.docx",
+      "sourceIngredients": [
+        {
+          "name": "Ячмень",
+          "raw": "beks-f02369bcd634",
+          "qty": 170.0
+        },
+        {
+          "name": "Экструдат  общ.",
+          "raw": "beks-9ee8a45d82d0",
+          "qty": 150.0
+        },
+        {
+          "name": "отруби",
+          "raw": "beks-a13d1434c2d0",
+          "qty": 175.0
+        },
+        {
+          "name": "Премикс 32 свин",
+          "raw": "beks-4ef16cf171db",
+          "qty": 5.0
+        }
+      ],
+      "sourceTotal": 500.0,
+      "sourceIssues": [],
+      "granule": "—",
+      "pack": "—",
+      "price": 0,
+      "priceKnown": false,
+      "stock": 0,
+      "stockKnown": false,
+      "repack": "—",
+      "tag": ""
+    },
+    {
+      "id": "beks-e6fc18bf802c",
+      "name": "СКС",
+      "recipe": {
+        "beks-f02369bcd634": 300.0,
+        "beks-9ee8a45d82d0": 100.0,
+        "beks-268b7a2b7e82": 50.0,
+        "beks-10ccc77c710b": 45.0,
+        "beks-4ef16cf171db": 5.0
+      },
+      "source": "СКС.docx",
+      "sourceIngredients": [
+        {
+          "name": "Ячмень",
+          "raw": "beks-f02369bcd634",
+          "qty": 300.0
+        },
+        {
+          "name": "Экструдат общ.",
+          "raw": "beks-9ee8a45d82d0",
+          "qty": 100.0
+        },
+        {
+          "name": "Горох",
+          "raw": "beks-268b7a2b7e82",
+          "qty": 50.0
+        },
+        {
+          "name": "МКМ",
+          "raw": "beks-10ccc77c710b",
+          "qty": 45.0
+        },
+        {
+          "name": "Премикс 32 свин",
+          "raw": "beks-4ef16cf171db",
+          "qty": 5.0
+        }
+      ],
+      "sourceTotal": 500.0,
+      "sourceIssues": [],
+      "granule": "—",
+      "pack": "—",
+      "price": 0,
+      "priceKnown": false,
+      "stock": 0,
+      "stockKnown": false,
+      "repack": "—",
+      "tag": ""
+    },
+    {
+      "id": "beks-b37b813500a3",
+      "name": "Собака",
+      "recipe": {
+        "beks-5b03581bb6a2": 370.0,
+        "beks-10ccc77c710b": 110.0,
+        "beks-c76bf2bae463": 10.0,
+        "beks-fcbd99600a13": 10.0
+      },
+      "source": "Собака.docx",
+      "sourceIngredients": [
+        {
+          "name": "Экструдат Пшеничный",
+          "raw": "beks-5b03581bb6a2",
+          "qty": 370.0
+        },
+        {
+          "name": "МКМ",
+          "raw": "beks-10ccc77c710b",
+          "qty": 110.0
+        },
+        {
+          "name": "Премикс «Собачий»",
+          "raw": "beks-c76bf2bae463",
+          "qty": 10.0
+        },
+        {
+          "name": "Лингногран",
+          "raw": "beks-fcbd99600a13",
+          "qty": 10.0
+        }
+      ],
+      "sourceTotal": 500.0,
+      "sourceIssues": [],
+      "granule": "8 мм",
+      "pack": "—",
+      "price": 0,
+      "priceKnown": false,
+      "stock": 0,
+      "stockKnown": false,
+      "repack": "—",
+      "tag": ""
+    },
+    {
+      "id": "beks-ec8f6ea5f1ea",
+      "name": "СТАРТ ТЕЛЯТА",
+      "recipe": {
+        "beks-f02369bcd634": 255.0,
+        "corn": 75.0,
+        "beks-36e4e56dc9bf": 75.0,
+        "beks-f02a1025f76c": 50.0,
+        "beks-3cfbe299c334": 35.0,
+        "beks-899059860bab": 7.5,
+        "beks-e9e7ccc09baf": 1.5,
+        "beks-92b698ceaeab": 1.0
+      },
+      "source": "СТАРТ ТЕЛЯТА.docx",
+      "sourceIngredients": [
+        {
+          "name": "ЯЧМЕНЬ",
+          "raw": "beks-f02369bcd634",
+          "qty": 255.0
+        },
+        {
+          "name": "КУКУРУЗА",
+          "raw": "corn",
+          "qty": 75.0
+        },
+        {
+          "name": "ЖМЫХ",
+          "raw": "beks-36e4e56dc9bf",
+          "qty": 75.0
+        },
+        {
+          "name": "ШРОТ СОЕВЫЙ",
+          "raw": "beks-f02a1025f76c",
+          "qty": 50.0
+        },
+        {
+          "name": "ЗЦМ",
+          "raw": "beks-3cfbe299c334",
+          "qty": 35.0
+        },
+        {
+          "name": "МЕЛ",
+          "raw": "beks-899059860bab",
+          "qty": 7.5
+        },
+        {
+          "name": "СОЛЬ",
+          "raw": "beks-e9e7ccc09baf",
+          "qty": 1.5
+        },
+        {
+          "name": "МОНОКАЛЬЦИЙ",
+          "raw": "beks-92b698ceaeab",
+          "qty": 1.0
+        }
+      ],
+      "sourceTotal": 500.0,
+      "sourceIssues": [
+        "Уточнить компонент: ЖМЫХ",
+        "Уточнить компонент: МОНОКАЛЬЦИЙ"
+      ],
+      "granule": "4 мм",
+      "pack": "—",
+      "price": 0,
+      "priceKnown": false,
+      "stock": 0,
+      "stockKnown": false,
+      "repack": "—",
+      "tag": ""
+    },
+    {
+      "id": "beks-074274301fe0",
+      "name": "Фермер",
+      "recipe": {
+        "beks-9ee8a45d82d0": 500.0
+      },
+      "source": "Фермер.docx",
+      "sourceIngredients": [
+        {
+          "name": "Экструдат Общий",
+          "raw": "beks-9ee8a45d82d0",
+          "qty": 500.0
+        }
+      ],
+      "sourceTotal": 500.0,
+      "sourceIssues": [
+        "Внутри документа название «Собака»; проверить соответствие файлу"
+      ],
+      "granule": "8 мм",
+      "pack": "—",
+      "price": 0,
+      "priceKnown": false,
+      "stock": 0,
+      "stockKnown": false,
+      "repack": "—",
+      "tag": ""
+    }
+  ],
+  "packaging": [
+    {
+      "id": "beks-ba97e41d7f70",
+      "name": "Мешки с логотипом \"БЭКС\" 10 кг,     шт",
+      "unit": "шт",
+      "min": 1000.0,
+      "purchaseBatch": 3000.0,
+      "source": "Сырье.xls",
+      "sourceRow": 20,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false
+    },
+    {
+      "id": "beks-5b7c95bcdcc6",
+      "name": "Мешки с логотипом \"БЭКС\" 30 кг,     шт",
+      "unit": "шт",
+      "min": 3000.0,
+      "purchaseBatch": 10000.0,
+      "source": "Сырье.xls",
+      "sourceRow": 21,
+      "stock": 0,
+      "price": 0,
+      "stockKnown": false,
+      "priceKnown": false
+    }
+  ]
+}

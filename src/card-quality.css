@@ -1,0 +1,58 @@
+
+#modal.quality-card .dialoghead{padding:14px 18px;min-height:66px;box-sizing:border-box}
+#modal.quality-card .dialoghead h2{font-size:18px;line-height:1.35;font-weight:600}
+#modal.quality-card .dialogbody{padding:16px 18px;scrollbar-gutter:stable;overflow-x:hidden}
+#modal.quality-card .dialogfoot{padding:12px 18px;gap:8px;min-height:64px;box-sizing:border-box}
+#modal.quality-card .dialogfoot button{padding:8px 12px;min-height:38px;font-size:13px}
+#modal.quality-card .deal-main{width:100%;max-width:100%;min-width:0;padding:0;background:none}
+#modal.quality-card .tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;margin:12px 0 16px;padding:0 0 8px;border-bottom:1px solid var(--line-strong);width:100%}
+#modal.quality-card .tabs button{padding:8px 4px;min-width:0;font-size:13px;border-radius:10px;white-space:nowrap}
+#modal.quality-card .tabs button.selected{background:#4f5a2f;color:#fff;border-color:#4f5a2f}
+#modal.quality-card .card-status{display:flex;align-items:center;flex-wrap:wrap;gap:8px;font-size:12px;min-height:28px}
+#modal.quality-card .card-status>span:last-child{color:var(--muted)}
+#modal.quality-card .order-totals{display:flex;justify-content:space-between;gap:12px;padding:12px 14px;background:var(--olive-50);border-radius:12px;margin-bottom:12px;font-size:12px}
+#modal.quality-card .order-totals b{display:block;font-size:19px;line-height:1.4;font-weight:600}
+#modal.quality-card .order-position{padding:12px 14px;border:1px solid var(--line);border-radius:12px;margin-bottom:10px;background:#fff}
+#modal.quality-card .position-heading{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:14px;line-height:1.4;margin:0}
+#modal.quality-card label.position-heading{justify-content:flex-start;cursor:pointer}
+#modal.quality-card .position-heading input{width:16px;height:16px;min-height:16px;flex:none;margin:0}
+#modal.quality-card .position-state{font-size:12px;color:var(--muted);margin:5px 0 8px}
+#modal.quality-card .compact-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 16px;margin:0}
+#modal.quality-card .compact-facts>div{min-width:0}
+#modal.quality-card .compact-facts dt{font-size:12px;color:var(--muted);line-height:1.4}
+#modal.quality-card .compact-facts dd{font-size:14px;margin:2px 0 0;line-height:1.4;overflow-wrap:anywhere}
+#modal.quality-card .compact-facts .full{grid-column:1/-1}
+#modal.quality-card .delivery-facts{margin:0 0 18px;padding:12px;background:var(--olive-50);border-radius:12px}
+#modal.quality-card h3{font-size:15px;line-height:1.4;margin:16px 0 10px}
+#modal.quality-card .card-more{border-top:1px solid var(--line);padding:10px 0;margin:8px 0 0;font-size:13px}
+#modal.quality-card .card-more summary{cursor:pointer;font-weight:600;padding:4px 0;line-height:1.4}
+#modal.quality-card .card-more .actions{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+#modal.quality-card .card-more button{font-size:13px;padding:7px 10px}
+#modal.quality-card .formgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+#modal.quality-card .field{font-size:13px;line-height:1.4;margin:0;min-width:0}
+#modal.quality-card .field input,#modal.quality-card .control-select-trigger,#modal.quality-card .date-trigger{min-height:38px;font-size:14px}
+#modal.quality-card .scroll{overflow:visible;max-height:none;width:100%;min-width:0}
+#modal.quality-card .scroll table{width:100%;min-width:0;table-layout:fixed}
+#modal.quality-card table th,#modal.quality-card table td{padding:8px;font-size:12px;overflow-wrap:anywhere;white-space:normal}
+#modal.quality-card .logs{overflow:visible;max-height:none}
+#modal.quality-card .job-card .job-tabs{margin-bottom:14px}
+#modal.quality-card .job-card .facts{margin-bottom:14px}
+#modal.quality-card .job-card .rrow .field{grid-template-columns:minmax(0,1fr) 80px}
+#modal.quality-card .job-card .radd button{font-size:13px;padding:8px 10px}
+#modal.quality-card [hidden]{display:none!important}
+@media(max-width:480px){#modal.quality-card .dialogbody{padding:14px}#modal.quality-card .dialoghead,#modal.quality-card .dialogfoot{padding:12px 14px}#modal.quality-card .formgrid{grid-template-columns:1fr}#modal.quality-card .order-totals b{font-size:17px}}
+
+#modal.quality-card .job-tabs button[aria-selected="true"]{color:#fff!important;background:#4f5a2f!important;border-color:#4f5a2f!important}
+#modal.quality-card .job-tabs button[aria-selected="false"]{color:#273016!important;background:#fff!important;border-color:var(--line-strong)!important}
+#modal.quality-card .job-tabs button:hover{color:#273016!important;background:#eef1e7!important}
+#modal.quality-card .job-tabs button[aria-selected="true"]:hover{color:#fff!important;background:#3c4623!important}
+
+#modal.quality-card button{transition:none}
+
+/* Fixed action geometry: global button padding must not compress icons. */
+#app .row-tools{display:inline-flex;align-items:center;justify-content:center;gap:8px;vertical-align:middle;white-space:nowrap}
+#app .row-tools .icon-tool{display:inline-flex;align-items:center;justify-content:center;flex:0 0 36px;width:36px;height:36px;min-width:36px;min-height:36px;max-width:36px;padding:0;margin:0;box-sizing:border-box;line-height:1;border-radius:50%}
+#app .row-tools .icon-tool svg{display:block;flex:0 0 16px;width:16px;height:16px;margin:0;pointer-events:none}
+#app td:has(>.row-tools){vertical-align:middle;text-align:center;padding:12px 16px;min-width:108px;white-space:nowrap}
+#app th:last-child:has(.sort-head){vertical-align:middle}
+@media(max-width:760px){#app .row-tools .icon-tool{flex-basis:40px;width:40px;height:40px;min-width:40px;min-height:40px;max-width:40px}#app td:has(>.row-tools){padding:12px;min-width:112px}}

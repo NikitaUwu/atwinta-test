@@ -1,0 +1,33 @@
+
+#modal.quality-card .composition-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:8px 0 12px}
+#modal.quality-card .composition-heading h3{margin:0}
+#modal.quality-card .composition-heading button{font-size:13px;padding:8px 12px;min-height:36px}
+#modal.quality-card .composition-results{border:1px solid var(--line-strong);border-radius:12px;padding:4px;margin:8px 0;background:#fff}
+#modal.quality-card .composition-results button{display:flex;flex-direction:column;align-items:flex-start;width:100%;border:0;border-radius:8px;padding:9px 10px;white-space:normal;text-align:left;font-size:13px}
+#modal.quality-card .composition-results small{font-size:12px;color:var(--muted);margin-top:3px}
+#modal.quality-card .composition-lines{margin-top:12px}
+#modal.quality-card .composition-qty{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:16px;margin-top:10px}
+#modal.quality-card .composition-qty>span{font-size:12px;color:var(--muted)}
+#modal.quality-card .composition-qty b{display:block;font-size:14px;color:var(--ink)}
+#modal.quality-card [data-composition-remove]{width:32px;height:32px;min-height:32px;flex:none;padding:0;line-height:1}
+#modal.quality-card .composition-total{padding:10px 12px;background:var(--olive-50);border-radius:10px;font-size:13px}
+#modal.quality-card .delivery-editor{margin-bottom:18px}
+
+/* Cards fill the lane instead of sizing themselves to their text. */
+#app .funnel-lane .lane-cards{align-items:stretch;min-width:0}
+#app .funnel-lane .lane-cards>.deal{width:100%;min-width:0;max-width:100%;box-sizing:border-box;align-self:stretch}
+#app .funnel-lane .lane-cards>.empty-block{width:100%;box-sizing:border-box}
+#app .funnel-lane .deal-title{max-width:100%;overflow-wrap:anywhere}
+#app .funnel-lane .deal-tools{flex-shrink:0}
+
+/* Quiet route cards: type color belongs to the header and cargo markers. */
+#app .lanes>.lane{border-radius:18px;border-color:#cfd5c5;box-shadow:0 2px 6px #27301605}
+#app .lanes>.lane::before{content:none}
+#app .lanes>.lane>.lane-head{padding:16px 18px;gap:16px;border-radius:17px 17px 0 0;background:color-mix(in srgb,var(--kb) 45%,white);border-bottom:1px solid #e0e5d9}
+#app .lanes>.lane>.lane-body{padding:16px 18px 18px;gap:18px}
+#app .lanes .extra-card{border-left-width:1px;border:1px solid color-mix(in srgb,var(--kc) 22%,#e0e5d9);border-radius:14px;padding:14px 16px}
+#app .lanes .cargo-card{border-left-width:1px;border-radius:14px;padding:14px 16px}
+#app .lanes .drop-placeholder{min-height:88px;border-radius:14px;background:#fafbf8;border-color:#d3d9c6}
+#app .lanes .lane-id b,#app .lanes .lane-title .link{font-size:16px;line-height:22px}
+#app .lanes .lane-id span,#app .lanes .lane-title small{line-height:20px}
+@media(max-width:760px){#app .lanes>.lane>.lane-head{padding:14px;gap:12px}#app .lanes>.lane>.lane-body{padding:14px}}
