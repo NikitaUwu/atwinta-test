@@ -1,7 +1,7 @@
 // Separate partner interfaces over shared demo records. This is not authentication.
 const partnerTabs={
  client:[['overview','Обзор'],['catalog','Каталог'],['requests','Мои заявки'],['orders','Заказы'],['documents','Документы'],['assistant','ИИ-помощник']],
- supplier:[['overview','Обзор'],['requests','Запросы покупателя'],['listings','Мои предложения'],['purchases','Заказы покупателя'],['deliveries','Отгрузки'],['documents','Документы'],['assistant','ИИ-помощник']]
+ supplier:[['overview','Обзор'],['requests','Запросы покупателя'],['listings','Мои предложения'],['purchases','Заказы покупателя'],['documents','Документы'],['assistant','ИИ-помощник']]
 };
 const partnerRoot=document.createElement('div');partnerRoot.id='partner-space';partnerRoot.hidden=true;document.body.append(partnerRoot);
 let partnerLastRoute='',partnerPaintedRole='';
@@ -57,7 +57,7 @@ function partnerSupplierContent(){
  if(portalUI.supplierTab==='requests')return `<p class="partner-explanation">Потребности покупателя, на которые вы можете ответить своими условиями. Ваш отклик еще не является заказом.</p><div class="proto-stack">${rfqs.filter(portalTextMatch).map(r=>portalRfqCard(r,true)).join('')||portalEmpty('Доступных запросов нет','Здесь появятся открытые запросы и приглашения вашей компании.')}</div>`;
  if(portalUI.supplierTab==='purchases')return `<p class="partner-explanation">Покупатель выбрал ваши условия и направил заказ. Подтвердите объем, цену, доставку и срок перед исполнением.</p>${cards(purchases)}`;
  if(portalUI.supplierTab==='deliveries')return `<p class="partner-explanation">Подтвержденные заказы к отгрузке. Сообщение об отправке не означает приемку на складе покупателя.</p>${cards(purchases.filter(p=>p.status!=='Ожидает подтверждения'))}`;
- return `<section class="partner-welcome"><div><h1>От предложения до поставки</h1><p>Получайте запросы покупателя, публикуйте сырье и согласовывайте заказы.</p></div>${portalButton('Разместить предложение','listing-new','',true)}</section>${portalKpis([['Доступные запросы',rfqs.length,'Открытые и по приглашению'],['Заказы к подтверждению',waiting.length,'Покупатель ждет вашего ответа'],['К отгрузке',purchases.filter(p=>p.status==='Подтвержден').length,'Условия подтверждены']])}<div class="partner-columns">${portalPanel('Нужен ваш ответ',cards(waiting),portalButton('Все заказы','tab','supplier:purchases'))}${portalPanel('Запросы покупателя',`<div class="proto-stack">${rfqs.slice(0,2).map(r=>portalRfqCard(r,true)).join('')||portalEmpty('Запросов нет','Публикуйте собственные предложения сырья.')}</div>`,portalButton('Все запросы','tab','supplier:requests'))}</div>`;
+ return `<section class="partner-welcome"><div><h1>От предложения до поставки</h1><p>Получайте запросы покупателя, публикуйте сырье и согласовывайте заказы.</p></div>${portalButton('Разместить предложение','listing-new','',true)}</section>${portalKpis([['Доступные запросы',rfqs.length,'Открытые и по приглашению'],['Заказы к подтверждению',waiting.length,'Покупатель ждет вашего ответа'],['К отгрузке',purchases.filter(p=>p.status!=='Ожидает подтверждения'&&flowPoTotals(p).toSend>0).length,'Есть объем к отправке']])}<div class="partner-columns">${portalPanel('Нужен ваш ответ',cards(waiting),portalButton('Все заказы','tab','supplier:purchases'))}${portalPanel('Запросы покупателя',`<div class="proto-stack">${rfqs.slice(0,2).map(r=>portalRfqCard(r,true)).join('')||portalEmpty('Запросов нет','Публикуйте собственные предложения сырья.')}</div>`,portalButton('Все запросы','tab','supplier:requests'))}</div>`;
 }
 function partnerRolePicker(current){return `<details class="space-switch"><summary>Сменить пространство <small>демо</small></summary><div class="space-switch-menu">${[['manager','Команда предприятия'],['client','Клиент'],['supplier','Поставщик']].map(([id,label])=>`<button type="button" data-space-role="${id}" ${current===id?'aria-current="true"':''}>${label}</button>`).join('')}<p>Просмотр ролей прототипа. Это не вход в учетную запись.</p></div></details>`}
 function partnerRender(){
@@ -68,14 +68,17 @@ function partnerRender(){
 }
 function partnerReadRoute(){
  const hash=location.hash;if(hash===partnerLastRoute||hash.slice(1).split('?')[0]!==page)return;
- const kind=partnerKind();if(!kind)return;const p=new URLSearchParams(hash.split('?')[1]||''),key=kind==='client'?'clientTab':'supplierTab',section=p.get('section')||'overview';
+ const kind=partnerKind();if(!kind)return;const p=new URLSearchParams(hash.split('?')[1]||''),key=kind==='client'?'clientTab':'supplierTab';let section=p.get('section')||'overview';
+ if(kind==='supplier'){portalUI.supplierOrderView=section==='deliveries'||p.get('view')==='shipments'?'shipments':'orders';if(section==='deliveries')section='purchases'}
  portalUI[key]=partnerTabs[kind].some(t=>t[0]===section)?section:'overview';
  if(kind==='client'&&S.companies.some(c=>String(c.id)===p.get('company')))portalUI.companyId=p.get('company');
  if(kind==='supplier'&&ensurePortalPrototype().suppliers.some(s=>s.id===p.get('company')))portalUI.supplierId=p.get('company');
  partnerLastRoute=hash;
 }
 function partnerWriteRoute(){
- const kind=partnerKind(),p=new URLSearchParams({section:portalUI[kind==='client'?'clientTab':'supplierTab'],company:String(kind==='client'?portalUI.companyId:portalUI.supplierId)}),hash='#'+page+'?'+p;
+ const kind=partnerKind(),p=new URLSearchParams({section:portalUI[kind==='client'?'clientTab':'supplierTab'],company:String(kind==='client'?portalUI.companyId:portalUI.supplierId)});
+ if(kind==='supplier'&&portalUI.supplierTab==='purchases'&&portalUI.supplierOrderView==='shipments')p.set('view','shipments');
+ const hash='#'+page+'?'+p;
  if(location.hash!==hash&&!readingRoute)history.pushState(null,'',location.pathname+location.search+hash);
  partnerLastRoute=location.hash;routeScreen=page;
 }
