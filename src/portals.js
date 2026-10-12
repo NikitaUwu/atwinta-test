@@ -108,7 +108,7 @@ function portalOpen(title,body,submit='',state={}){
  if($('#modal').open)$('#modal').close();
  portalDialogOpener=document.activeElement;portalDialogState=state;
  portalDialog.setAttribute('aria-labelledby','portal-dialog-title');
- portalDialog.innerHTML=`<form id="portal-form" novalidate><div class="dialoghead"><h2 id="portal-dialog-title">${esc(title)}</h2>${portalButton('Закрыть','close-dialog')}</div><div class="dialogbody"><p id="portal-form-error" class="error" role="alert" hidden></p>${body}</div><div class="dialogfoot">${portalButton(submit?'Отмена':'Закрыть','close-dialog')}${submit?`<button type="submit" class="primary">${esc(submit)}</button>`:''}</div></form>`;
+ portalDialog.innerHTML=`<form id="portal-form" novalidate><div class="dialoghead"><h2 id="portal-dialog-title">${esc(title)}</h2><button type="button" class="portal-close" data-proto-act="close-dialog" aria-label="Закрыть">×</button></div><div class="dialogbody"><p id="portal-form-error" class="error" role="alert" hidden></p>${body}</div>${submit?`<div class="dialogfoot">${portalButton('Отмена','close-dialog')}<button type="submit" class="primary">${esc(submit)}</button></div>`:''}</form>`;
  if(!portalDialog.open)portalDialog.showModal();
  const first=portalDialog.querySelector('input:not([type=hidden]),textarea');if(first)first.focus();
 }

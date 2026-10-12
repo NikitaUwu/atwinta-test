@@ -3,6 +3,7 @@
 .ai-preview-shortcut .ai-preview-button{padding:7px 10px;font-size:12px;background:transparent;border-color:transparent}
 .ai-preview-shortcut small,.flow-note,.flow-doc-row small{color:var(--muted);font-size:12px;line-height:1.6}
 .ai-preview-card-entry{border:0;padding-top:0}.ai-preview-manager-tools{justify-content:flex-end;margin-bottom:8px}
+.portal-close{flex:0 0 40px;width:40px;min-width:40px;height:40px;padding:0;font-size:24px;line-height:1;border-radius:50%}
 .partner-welcome{padding:18px 20px}.partner-welcome h1{font-size:20px}
 .flow-metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:10px;margin:14px 0}
 .flow-metrics>div{padding:10px 12px;background:#f5f6f0;border-radius:10px;min-width:0}
@@ -31,3 +32,4 @@
 .coverage-affected{display:flex;flex-wrap:wrap;gap:8px}.coverage-affected button{font-size:12px}
 @media(max-width:900px){.flow-doc-filters{grid-template-columns:repeat(2,minmax(0,1fr))}.coverage-report .flow-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.flow-card-head,.flow-doc-row,.coverage-report-head{flex-direction:column}.flow-line,.flow-lines[data-priced=true] .flow-line{grid-template-columns:1fr 1fr}.flow-line .field:first-child{grid-column:1/-1}.flow-line>button{justify-self:end}.flow-doc-filters{grid-template-columns:1fr}.coverage-question{flex-direction:column;align-items:stretch}.coverage-report{padding:14px}.flow-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.flow-doc-row .proto-actions{flex-wrap:wrap}.coverage-workspace h2{font-size:20px}}
+@media(max-width:760px){.partner-organization{display:flex}.partner-organization>div{min-width:0}.partner-organization .proto-avatar{flex-shrink:0}}
