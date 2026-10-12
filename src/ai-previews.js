@@ -85,13 +85,12 @@ function aiPreviewBand(title,text,action,label,context='',recommend=false){
 }
 function aiPreviewMount(){
  const role=aiPreviewRole(),head=partnerKind()?partnerRoot.querySelector('.partner-header-right'):$('#manager-space-control');
- if(head&&!head.querySelector('[data-ai-preview="assistant"]'))head.insertAdjacentHTML('afterbegin',aiPreviewButton('ИИ-помощник','assistant',aiPreviewLocation(),'ai-preview-header-button'));
+ if(head&&!aiWorkspaceActive()&&!head.querySelector('[data-ai-preview="assistant"]'))head.insertAdjacentHTML('afterbegin',aiPreviewButton('ИИ-помощник','assistant',aiPreviewLocation(),'ai-preview-header-button'));
  const content=partnerKind()?partnerRoot.querySelector('.partner-content'):$('#app .proto');
  if(role==='client'&&content){
   if(portalUI.clientTab==='overview')content.insertAdjacentHTML('beforeend',aiPreviewBand('Ваша следующая закупка','Здесь появится предложение повторить привычный заказ.','recommend','Посмотреть пример','repeat',true));
   if(portalUI.clientTab==='catalog'){
    content.insertAdjacentHTML('beforeend',aiPreviewBand('Подбор под вашу задачу','Место для персональных рекомендаций в каталоге.','recommend','Как это выглядит','catalog',true));
-   content.querySelectorAll('.proto-product').forEach(card=>card.insertAdjacentHTML('beforeend',aiPreviewButton('Похожие варианты','recommend','alternatives','ai-preview-card-button')));
   }
   if(portalUI.clientTab==='requests')content.insertAdjacentHTML('beforeend',aiPreviewBand('Заявка из сообщения, файла или голоса','Передайте условия в удобном формате вместо ручного заполнения.','import','Посмотреть интерфейс'));
  }
@@ -112,7 +111,7 @@ function aiPreviewMount(){
 for(const name of ['portalOrderCard','portalPurchaseCard','portalRfqCard']){
  const previous=window[name];
  window[name]=function(record,...args){
-  const html=previous(record,...args),label=name==='portalOrderCard'?'Заказ №'+record.id:name==='portalPurchaseCard'?'Поставка №'+record.number:'Запрос на закупку';
+  const html=previous(record,...args),label=name==='portalOrderCard'?'Заказ №'+record.id:name==='portalPurchaseCard'?'Поставка №'+record.number:'Запрос '+record.id+' · '+(portalRaw(record.rawId)?.name||'сырье');
   return html.replace('</article>',`<div class="ai-preview-card-entry">${aiPreviewButton('Спросить ИИ','assistant',label,'ai-preview-card-button')}</div></article>`);
  };
 }
