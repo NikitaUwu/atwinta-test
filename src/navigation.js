@@ -20,7 +20,7 @@ render=function(){
  const params=new URLSearchParams();
  if(['client-portal','supplier-portal'].includes(page)&&location.hash.slice(1).split('?')[0]===page){
   const partnerRoute=new URLSearchParams(location.hash.split('?')[1]||'');
-  for(const key of ['section','company'])if(partnerRoute.has(key))params.set(key,partnerRoute.get(key));
+  for(const key of ['section','company','view'])if(partnerRoute.has(key))params.set(key,partnerRoute.get(key));
  }
  if(page==='ai-assistant')params.set('role',aiAssistantInternalRole);
  if(['day','shifts','trips','sales','revenue','prodreport'].includes(page)){

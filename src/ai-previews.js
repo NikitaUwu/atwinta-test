@@ -81,27 +81,27 @@ document.addEventListener('click',event=>{
  }
 });
 function aiPreviewBand(title,text,action,label,context='',recommend=false){
- return `<section class="ai-preview-band ${recommend?'ai-preview-band-recommend':''}"><div class="ai-preview-band-icon">${aiSpark}</div><div><span class="ai-preview-label">ИИ · макет</span><h3>${esc(title)}</h3><p>${esc(text)}</p></div>${aiPreviewButton(label,action,context)}</section>`;
+ return `<div class="ai-preview-shortcut">${aiPreviewButton(title,action,context)}<small>ИИ · макет</small></div>`;
 }
 function aiPreviewMount(){
  const role=aiPreviewRole(),head=partnerKind()?partnerRoot.querySelector('.partner-header-right'):$('#manager-space-control');
  if(head&&!head.querySelector('[data-ai-preview="assistant"]'))head.insertAdjacentHTML('afterbegin',aiPreviewButton('ИИ-помощник','assistant',aiPreviewLocation(),'ai-preview-header-button'));
  const content=partnerKind()?partnerRoot.querySelector('.partner-content'):$('#app .proto');
  if(role==='client'&&content){
-  if(portalUI.clientTab==='overview')content.insertAdjacentHTML('afterbegin',aiPreviewBand('Ваша следующая закупка','Здесь появится предложение повторить привычный заказ.','recommend','Посмотреть пример','repeat',true));
+  if(portalUI.clientTab==='overview')content.insertAdjacentHTML('beforeend',aiPreviewBand('Ваша следующая закупка','Здесь появится предложение повторить привычный заказ.','recommend','Посмотреть пример','repeat',true));
   if(portalUI.clientTab==='catalog'){
-   content.insertAdjacentHTML('afterbegin',aiPreviewBand('Подбор под вашу задачу','Место для персональных рекомендаций в каталоге.','recommend','Как это выглядит','catalog',true));
+   content.insertAdjacentHTML('beforeend',aiPreviewBand('Подбор под вашу задачу','Место для персональных рекомендаций в каталоге.','recommend','Как это выглядит','catalog',true));
    content.querySelectorAll('.proto-product').forEach(card=>card.insertAdjacentHTML('beforeend',aiPreviewButton('Похожие варианты','recommend','alternatives','ai-preview-card-button')));
   }
-  if(portalUI.clientTab==='requests')content.insertAdjacentHTML('afterbegin',aiPreviewBand('Заявка из сообщения, файла или голоса','Передайте условия в удобном формате вместо ручного заполнения.','import','Посмотреть интерфейс'));
+  if(portalUI.clientTab==='requests')content.insertAdjacentHTML('beforeend',aiPreviewBand('Заявка из сообщения, файла или голоса','Передайте условия в удобном формате вместо ручного заполнения.','import','Посмотреть интерфейс'));
  }
  if(role==='supplier'&&content){
-  if(portalUI.supplierTab==='overview')content.insertAdjacentHTML('afterbegin',aiPreviewBand('Запросы под ваше сырьё','Место для запросов, подходящих под ваши предложения и условия.','recommend','Посмотреть пример','supplier',true));
-  if(portalUI.supplierTab==='listings')content.insertAdjacentHTML('afterbegin',aiPreviewBand('Предложение из прайса или сообщения','Место для переноса условий продажи в форму предложения.','import','Посмотреть интерфейс'));
+  if(portalUI.supplierTab==='overview')content.insertAdjacentHTML('beforeend',aiPreviewBand('Запросы под ваше сырьё','Место для запросов, подходящих под ваши предложения и условия.','recommend','Посмотреть пример','supplier',true));
+  if(portalUI.supplierTab==='listings')content.insertAdjacentHTML('beforeend',aiPreviewBand('Предложение из прайса или сообщения','Место для переноса условий продажи в форму предложения.','import','Посмотреть интерфейс'));
  }
  if(role==='buyer'&&content){
-  if(['overview','listings'].includes(portalUI.buyerTab))content.insertAdjacentHTML('afterbegin',aiPreviewBand('Предложения под вашу потребность','Здесь появится подбор сырья с объяснением условий и отличий.','recommend','Посмотреть пример','buyer',true));
-  if(portalUI.buyerTab==='requests')content.insertAdjacentHTML('afterbegin',aiPreviewBand('Входящее КП в удобной форме','Место для разбора условий поставщика и сопоставления с запросом.','import','Посмотреть интерфейс'));
+  if(['overview','listings'].includes(portalUI.buyerTab))content.insertAdjacentHTML('beforeend',aiPreviewBand('Предложения под вашу потребность','Здесь появится подбор сырья с объяснением условий и отличий.','recommend','Посмотреть пример','buyer',true));
+  if(portalUI.buyerTab==='requests')content.insertAdjacentHTML('beforeend',aiPreviewBand('Входящее КП в удобной форме','Место для разбора условий поставщика и сопоставления с запросом.','import','Посмотреть интерфейс'));
  }
  if(role==='manager'&&page==='orders'){
   const inbox=$('#app .manager-partner-inbox');
@@ -120,14 +120,14 @@ const aiPreviewPortalOpenBefore=portalOpen;
 portalOpen=function(title,body,submit='',state={}){
  aiPreviewPortalOpenBefore(title,body,submit,state);
  const dialogBody=portalDialog.querySelector('.dialogbody');
- if(['request','partner-proposal','offer','listing'].includes(state.type))dialogBody.insertAdjacentHTML('afterbegin',aiPreviewBand('Заполнить из сообщения или файла','Текст, документы и голосовое сообщение. Результат можно будет проверить.','import','Посмотреть макет'));
+ if(['request','partner-proposal','offer','listing'].includes(state.type))dialogBody.insertAdjacentHTML('beforeend',aiPreviewBand('Заполнить из сообщения или файла','Текст, документы и голосовое сообщение. Результат можно будет проверить.','import','Посмотреть макет'));
  else if(!submit)dialogBody.insertAdjacentHTML('beforeend',`<div class="ai-preview-card-entry">${aiPreviewButton('Спросить ИИ об этой карточке','assistant',title)}</div>`);
 };
 const aiPreviewDrawBefore=drawDialog;
 drawDialog=function(){
  aiPreviewDrawBefore();const body=$('#modal .dialogbody');
  if(body&&['order','job','trip','purchase'].includes(dialogType))body.insertAdjacentHTML('afterbegin',`<div class="ai-preview-card-entry">${aiPreviewButton('Спросить ИИ о связях и сроках','assistant',$('#modal h2')?.textContent||aiPreviewLocation())}</div>`);
- if(body&&dialogType==='neworder')body.insertAdjacentHTML('afterbegin',aiPreviewBand('Заявка из обращения клиента','Место для заполнения формы из сообщения или документа.','import','Посмотреть макет'));
+ if(body&&dialogType==='neworder')body.insertAdjacentHTML('beforeend',aiPreviewBand('Заявка из обращения клиента','Место для заполнения формы из сообщения или документа.','import','Посмотреть макет'));
 };
 const aiPreviewRenderBefore=render;
 render=function(){if(aiPreviewDialog.open)aiPreviewDialog.close();aiPreviewRenderBefore();aiPreviewMount()};
