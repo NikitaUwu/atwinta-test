@@ -1,0 +1,151 @@
+/* Cabinet visual system. The existing palette and information architecture stay intact. */
+#partner-space{
+ --partner-radius:20px;
+ --partner-elevation:0 2px 12px rgb(79 90 47 / .035);
+ --partner-elevation-hover:0 10px 28px rgb(79 90 47 / .09);
+ --partner-speed:180ms;
+ --partner-ease:cubic-bezier(.2,.75,.2,1);
+ background:var(--surface);
+ -webkit-font-smoothing:antialiased;
+}
+#partner-space .partner-header{padding:20px 32px;border-bottom-color:var(--line)}
+#partner-space .partner-brand b{font-size:17px;font-weight:650;letter-spacing:-.025em}
+#partner-space .partner-brand small{font-size:12px;line-height:18px;margin-top:3px}
+#partner-space .partner-body{grid-template-columns:264px minmax(0,1fr)}
+#partner-space .partner-sidebar{padding:30px 18px 24px;gap:28px;background:var(--surface)}
+#partner-space .partner-organization{gap:12px;padding:0 8px}
+#partner-space .partner-organization b{font-size:14px;font-weight:600;line-height:21px}
+#partner-space .partner-organization small{font-size:12px;line-height:18px;margin-top:2px}
+#partner-space .partner-organization .proto-avatar{width:42px;height:42px;flex-basis:42px;border-radius:14px}
+#partner-space .partner-sidebar>nav{gap:5px}
+#partner-space .partner-sidebar>nav button{position:relative;min-height:48px;font-size:15px;line-height:21px;font-weight:500;padding:0 16px;color:var(--muted);overflow:hidden;isolation:isolate}
+#partner-space .partner-sidebar>nav button:before{content:'';position:absolute;left:0;top:12px;bottom:12px;width:3px;border-radius:0 4px 4px 0;background:var(--accent);opacity:0;transform:scaleY(.5);transition:opacity var(--partner-speed),transform var(--partner-speed) var(--partner-ease)}
+#partner-space .partner-sidebar>nav button[aria-current=page]{font-weight:650;color:var(--accent);background:var(--olive-50)}
+#partner-space .partner-sidebar>nav button[aria-current=page]:before{opacity:1;transform:scaleY(1)}
+#partner-space .partner-main{padding:32px 36px 48px}
+#partner-space .partner-page-head{gap:20px;margin-bottom:28px}
+#partner-space .partner-page-head h1{font-size:36px;line-height:1.2;font-weight:650;letter-spacing:-.035em;text-wrap:balance}
+#partner-space .partner-page-head p{font-size:15px;line-height:23px;margin-top:7px;color:var(--muted)}
+#partner-space .partner-search{max-width:520px;min-height:48px;padding:0 16px;border-radius:14px;background:var(--surface);border-color:var(--line);transition:border-color var(--partner-speed),box-shadow var(--partner-speed)}
+#partner-space .partner-search input{min-height:46px;font-size:14px;padding:0 4px;outline:none;box-shadow:none}
+#partner-space .partner-search svg{width:20px;height:20px}
+#partner-space .partner-search:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px rgb(79 90 47 / .1)}
+#partner-space :is(button,.space-switch>summary){transition:background-color var(--partner-speed),border-color var(--partner-speed),box-shadow var(--partner-speed),color var(--partner-speed),transform var(--partner-speed) var(--partner-ease)}
+#partner-space button{min-height:42px;font-size:14px;line-height:20px;font-weight:550}
+#partner-space :is(button,.space-switch>summary):focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+#partner-space .primary{background:var(--gold);color:var(--ink);border-color:var(--line-strong);box-shadow:0 3px 8px rgb(79 90 47 / .075);font-weight:650;padding:0 22px;min-height:46px}
+#partner-space .primary:hover{background:var(--gold);border-color:var(--accent);box-shadow:0 5px 14px rgb(79 90 47 / .12)}
+#partner-space button:active:not(:disabled){transform:scale(.98)}
+#partner-space button:disabled{cursor:not-allowed;box-shadow:none;transform:none}
+#partner-space .space-switch>summary{font-size:12px;line-height:18px;padding:10px 16px;border-color:var(--line);background:var(--surface)}
+#partner-space .space-switch-menu{border-radius:16px;padding:8px;box-shadow:var(--shadow-lg)}
+#partner-space .partner-content{gap:20px}
+#partner-space :is(.proto-panel,.proto-order,.proto-product,.proto-trade-card,.flow-shipment,.proto-kpi){border-color:var(--line);border-radius:var(--partner-radius);box-shadow:var(--partner-elevation);transition:border-color var(--partner-speed),box-shadow var(--partner-speed),transform var(--partner-speed) var(--partner-ease)}
+#partner-space .proto-panel{padding:24px}
+#partner-space :is(.proto-order,.proto-product,.proto-trade-card){padding:24px;gap:16px;background:var(--surface)}
+#partner-space .proto-panel .proto-order{box-shadow:none;padding:18px;border-radius:16px}
+#partner-space .proto-panel-heading{gap:16px;margin-bottom:18px}
+#partner-space .proto-panel-heading h2{font-size:18px;line-height:26px;font-weight:600;letter-spacing:-.015em}
+#partner-space :is(.proto-order h3,.proto-product h3,.proto-trade-card h3){font-size:20px;line-height:28px;font-weight:600;letter-spacing:-.018em}
+#partner-space .proto-caption{font-size:13px;line-height:19px;margin-bottom:3px}
+#partner-space :is(.proto-order p,.proto-trade-quality,.partner-explanation){font-size:14px;line-height:23px}
+#partner-space .proto-doc-note{font-size:14px;line-height:23px}
+#partner-space .proto-kpis{gap:16px}
+#partner-space .proto-kpi{padding:20px 22px;gap:7px;position:relative}
+#partner-space .proto-kpi>span{font-size:13px;line-height:20px;font-weight:500}
+#partner-space .proto-kpi strong{font-size:32px;line-height:40px;font-weight:650;letter-spacing:-.035em;font-variant-numeric:tabular-nums}
+#partner-space .proto-kpi small{font-size:12px;line-height:18px}
+#partner-space :is(.proto-price,.proto-trade-price){font-size:34px;line-height:42px;font-weight:650;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+#partner-space :is(.proto-price small,.proto-trade-price small){font-size:13px;line-height:20px;font-weight:400;letter-spacing:0}
+#partner-space .proto-trade-facts{gap:12px;padding:16px 0;font-size:14px;line-height:22px}
+#partner-space .proto-trade-facts>div{font-size:14px;line-height:22px}
+#partner-space :is(.proto-trade-facts dd,.proto-order-bottom strong,.flow-metrics strong){font-variant-numeric:tabular-nums}
+#partner-space .proto-trade-quality{color:var(--muted)}
+#partner-space .proto-actions{gap:8px}
+#partner-space .proto-actions button{font-size:13px;min-height:40px;padding:0 16px}
+#partner-space .badge{font-size:12px;line-height:18px;font-weight:600;padding:6px 10px;border-radius:9px}
+#partner-space .flow-metrics{gap:10px;margin:6px 0}
+#partner-space .flow-metrics>div{background:var(--olive-50);border-radius:12px;padding:12px}
+#partner-space .flow-metrics strong{font-size:18px;font-weight:600;letter-spacing:-.02em}
+#partner-space .flow-metrics span{font-size:12px;line-height:18px}
+#partner-space .flow-next{color:var(--accent);font-weight:550;font-size:13px}
+#partner-space .flow-shipment{padding:22px}
+#partner-space .flow-card-head b{font-weight:600;font-size:15px;line-height:23px}
+#partner-space .flow-tabs{display:inline-flex;align-self:flex-start;padding:4px;gap:4px;border:1px solid var(--line);border-radius:999px;background:var(--olive-50)}
+#partner-space .flow-tabs button{border-color:transparent;background:transparent;min-height:36px;font-size:13px}
+#partner-space .flow-tabs button[aria-pressed=true]{background:var(--surface);border-color:var(--line);color:var(--accent);box-shadow:var(--partner-elevation);font-weight:600}
+#partner-space .flow-doc-row{padding:18px 4px;transition:background-color var(--partner-speed);border-radius:10px}
+#partner-space .flow-doc-row b{font-weight:600;font-size:14px}
+#partner-space .flow-doc-filters{gap:14px;padding:18px;border:1px solid var(--line);border-radius:16px;background:var(--olive-50)}
+#partner-space .field{font-size:13px;line-height:20px}
+#partner-space :is(.field input,.ui-control-trigger){border-color:var(--line);border-radius:12px;min-height:44px}
+#partner-space .partner-explanation{border-color:var(--line-strong);border-radius:0 12px 12px 0;background:var(--olive-50);padding:12px 16px}
+#partner-space .proto-empty{background:var(--olive-50);padding:28px 20px;border-color:var(--line);border-radius:16px}
+#partner-space .proto-empty h3{font-size:16px;font-weight:600}
+#partner-space .ai-preview-shortcut{gap:12px;padding-top:16px;margin-top:12px}
+#partner-space .ai-preview-shortcut .ai-preview-button{font-size:13px;line-height:20px;font-weight:550;padding:7px 10px;min-height:38px;color:var(--accent)}
+#partner-space .ai-preview-shortcut small{font-size:11px}
+#partner-space .ai-preview-header-button{min-height:42px;font-size:13px;border-color:var(--line-strong);background:var(--olive-50)}
+#partner-space :is(.ai-workspace-history,.ai-workspace-context,.ai-workspace-conversation){border-radius:18px;border-color:var(--line);box-shadow:var(--partner-elevation)}
+#partner-space .ai-workspace-conversation-head h2{font-weight:600;letter-spacing:-.02em}
+#partner-space :is(.ai-workspace-history nav button,.ai-workspace-new){border-color:var(--line)}
+body.partner-mode #portal-dialog{border:1px solid var(--line);border-radius:24px;box-shadow:0 24px 80px rgb(38 45 22 / .18)}
+body.partner-mode #portal-dialog .dialoghead{padding:20px 24px;background:var(--surface);z-index:2}
+body.partner-mode #portal-dialog .dialoghead h2{font-size:21px;line-height:29px;font-weight:600;letter-spacing:-.025em}
+body.partner-mode #portal-dialog .dialogbody{padding:24px;gap:20px}
+body.partner-mode #portal-dialog .dialogfoot{padding:16px 24px;background:var(--surface)}
+body.partner-mode #portal-dialog :is(button,input,.ui-control-trigger,textarea){transition:background-color 180ms,border-color 180ms,box-shadow 180ms,transform 180ms var(--partner-ease,cubic-bezier(.2,.75,.2,1))}
+body.partner-mode #portal-dialog .portal-close{background:var(--olive-50);border-color:transparent}
+body.partner-mode #portal-dialog .portal-close:hover{background:var(--sage-200);border-color:var(--line-strong)}
+body.partner-mode #portal-dialog :is(input,textarea,.ui-control-trigger){border-color:var(--line)}
+body.partner-mode #portal-dialog :is(input,textarea):focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+body.partner-mode #portal-dialog .proto-order{background:var(--olive-50);border-color:var(--line);border-radius:18px}
+body.partner-mode #portal-dialog .proto-summary dt{font-size:13px}
+body.partner-mode #portal-dialog .proto-summary dd{font-size:14px}
+body.partner-mode #portal-dialog .scroll{border-radius:16px}
+body.partner-mode #portal-dialog th{background:var(--olive-50)}
+body.partner-mode #portal-dialog td{font-size:13px;padding:14px 16px;font-variant-numeric:tabular-nums}
+body.partner-mode #portal-dialog::backdrop{background:rgb(38 45 22 / .32);animation:partner-backdrop-in 180ms ease-out}
+@keyframes partner-backdrop-in{from{background:rgb(38 45 22 / 0)}to{background:rgb(38 45 22 / .32)}}
+@media(hover:hover) and (pointer:fine){
+ #partner-space :is(.proto-product,.proto-trade-card,.flow-shipment):hover{border-color:var(--line-strong);box-shadow:var(--partner-elevation-hover);transform:translateY(-2px)}
+ #partner-space :is(.proto-order,.proto-kpi):hover{border-color:var(--line-strong);box-shadow:0 4px 18px rgb(79 90 47 / .06)}
+ #partner-space .partner-sidebar>nav button:not([aria-current]):hover{background:var(--olive-50);color:var(--accent);transform:translateX(2px)}
+ #partner-space .flow-doc-row:hover{background:var(--olive-50)}
+}
+@media(max-width:1150px){#partner-space .partner-body{grid-template-columns:210px minmax(0,1fr)}#partner-space .partner-main{padding:26px 24px 40px}}
+@media(max-width:760px){
+ #partner-space .partner-header{padding:14px 16px;gap:12px}
+ #partner-space .partner-brand b{font-size:14px}
+ #partner-space .partner-brand small{font-size:11px}
+ #partner-space .partner-header-right{gap:8px}
+ #partner-space .space-switch>summary{font-size:11px;padding:8px 12px;max-width:155px}
+ #partner-space .partner-body{display:block}
+ #partner-space .partner-sidebar{padding:16px;gap:14px}
+ #partner-space .partner-sidebar>nav{gap:5px}
+ #partner-space .partner-sidebar>nav button{min-height:44px;padding:0 14px;font-size:13px}
+ #partner-space .partner-sidebar>nav button:before{display:none}
+ #partner-space .partner-main{padding:24px 16px 36px}
+ #partner-space .partner-page-head{gap:12px;margin-bottom:20px}
+ #partner-space .partner-page-head h1{font-size:27px;line-height:34px}
+ #partner-space .partner-page-head p{font-size:13px;line-height:20px;margin-top:5px}
+ #partner-space .partner-search{max-width:none}
+ #partner-space .proto-kpi{padding:16px 18px}
+ #partner-space .proto-kpi strong{font-size:28px;line-height:34px}
+ #partner-space .proto-panel{padding:18px}
+ #partner-space :is(.proto-order,.proto-product,.proto-trade-card,.flow-shipment){padding:18px;border-radius:18px}
+ #partner-space .proto-panel .proto-order{padding:16px}
+ #partner-space .primary{min-height:44px;padding:0 18px}
+ #partner-space .proto-actions button{min-height:44px;padding:0 14px}
+ #partner-space :is(.field input,.ui-control-trigger){font-size:16px;min-height:44px}
+ #partner-space .flow-doc-filters{padding:14px}
+ #partner-space .ai-preview-header-button{font-size:12px;padding:8px 12px}
+ #partner-space .flow-metrics>div{padding:10px}
+ body.partner-mode #portal-dialog .dialoghead{padding:16px}
+ body.partner-mode #portal-dialog .dialogbody{padding:18px 16px}
+ body.partner-mode #portal-dialog .dialogfoot{padding:14px 16px}
+}
+@media(prefers-reduced-motion:reduce){
+ #partner-space *,#partner-space *:before,body.partner-mode #portal-dialog,body.partner-mode #portal-dialog *,body.partner-mode #portal-dialog::backdrop{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+ #partner-space :is(button,.proto-product,.proto-trade-card,.flow-shipment,.partner-sidebar>nav button):hover{transform:none!important}
+}
